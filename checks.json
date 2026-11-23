@@ -31,8 +31,8 @@
     "profile save remains disabled; brand-name typing only previews the greeting for this browser tab"
   ],
   "qa": {
-    "browser_desktop": "V12 was checked; V13 needs final browser pass",
-    "browser_responsive": "V12 frames available at 320, 360, 390px; V13 needs final browser pass",
+    "browser_desktop": "V13 visually inspected; V14 nav gear pill correction and hover behavior require final check.",
+    "browser_responsive": "V13 rendered at 320/360/390 widths; V14 final check pending",
     "carousel_touch_swipe": "not tested",
     "pwa_install_on_device": "not tested",
     "mobile_physical": "not tested",
@@ -67,6 +67,6 @@
   },
   "layout": {
     "card_width_height_padding": "unchanged relative to production stylesheet",
-    "first_view": "reduced only hero and welcome statement margins above first card shelf to improve first-fold visibility; no text size/card geometry changes"
+    "first_view": "first category and next category heading now fit better; tightened only vertical margins before first shelf"
   }
 }
