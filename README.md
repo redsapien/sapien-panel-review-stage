@@ -1,11 +1,9 @@
-# Sapien · revisión aislada V30
+# Sapien · revisión aislada V31
 
-Staging visual público separado de la cuenta productiva. Producción no se modificó.
+- Fondo de partículas/red casi transparente, en una sola capa tras el catálogo.
+- Algo más de separación alrededor de «Hola», la pregunta de bienvenida y la frase comercial.
+- Módulo nombrado «Sapien IA» de forma consistente. El chat sigue siendo una prueba local sin conexión a agente real.
+- La tarjeta $50.000 COP organiza el precio a la izquierda, «Pago contra entrega» a la derecha y el CTA debajo en una fila completa; el importe no se envuelve dentro de la etiqueta.
+- Quitada del modal del dominio la línea «IA y analítica · por desplegar».
 
-- El fondo de red quedó mucho más transparente, con una sola capa visible bajo el catálogo. No tapa el contenido.
-- Se dejó más aire entre «Hola», la pregunta de bienvenida y el texto comercial, conservando el primer pliegue compacto.
-- El módulo se llama «Sapien IA» en navegación lateral, menú inferior y título. La conversación es una demostración local, no está conectada a un agente real; no se envía ni guarda lo escrito.
-- La tarjeta de $50.000 COP muestra «Pago contra entrega» al lado del precio, y el botón debajo. En el detalle se conserva la forma acordada de pago al recibir el sitio en línea.
-- Se quitó «IA y analítica · por desplegar» del modal del dominio sugerido; no se modificó el resto del contenido del modal.
-
-Revisar en 320/360/390 CSS px y escritorio. Autenticación, guardado, pagos y conexión real de IA permanecen desconectados.
+Staging público aislado: producción no se tocó. Envíos, guardados, pagos y conexión real de IA siguen apagados.

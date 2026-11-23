@@ -74,12 +74,16 @@
     "ai_mobile": "V27 fits the chat panel above the mobile dock; processing and conversation can scroll inside their designated space.",
     "global_copy": "Keeps all service card copy and prices as production, except the requested welcome phrase; shortened redundant empty/info labels and compacted whitespace."
   },
-  "version": "V30",
+  "version": "V31",
   "changes": [
     "Softer, almost transparent background mesh; duplicate background layers removed.",
     "Greeting sections gain a little breathing room.",
     "Hablemos/Una IA renamed Sapien IA in desktop/mobile navigation and title.",
     "$50,000 COP paired with Pago contra entrega beside the price; CTA on the next row.",
     "Removed IA y analítica · por desplegar note from the suggested-domain modal."
-  ]
+  ],
+  "price_layout": "Price amount + COP left; separate Pago contra entrega pill at right; Ver qué incluye full-width next row. Responsive QA pending.",
+  "modal_note": "IA y analítica · por desplegar is removed from the suggested-domain modal. Browser test pending.",
+  "background": "Near-transparent mesh only on the catalog: .075 desktop/.048 mobile. Parent background layers contain no mesh.",
+  "greeting_spacing": "4px more breathing space around Hola, greeting and slogan."
 }
