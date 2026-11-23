@@ -9,3 +9,5 @@ Staging visual/interactiva local; **no altera producción**.
 - El nombre del negocio del campo local cambia el rótulo del asistente a “Agente de [negocio]”; si no hay negocio, se muestra Antonella IA. Nombre solo en sessionStorage del navegador de prueba; no se lee Gmail ni perfil/registro real y no hay modelo conectado.
 
 Producción conserva por ahora otro párrafo de tarjeta: “Su sitio web para presentar su negocio y facilitar el contacto.” El velo de navegación productivo se observó, pero no se tocó. Backend, notificaciones reales, teclado de hardware y despliegue productivo quedan fuera de esta revisión aislada.
+
+V51 final specificity update ensures distinct but restrained capability-icon colors remain visible in dark and light themes.

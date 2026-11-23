@@ -1,5 +1,5 @@
 {
-  "version": "V50",
+  "version": "V51",
   "scope": "Isolated GitHub Pages preview only; production unchanged.",
   "changes": [
     "Card shows $50.000 COP and “Pago único” at left; “Ver qué incluye” button is larger at right. “Pago contra entrega” is only in modal.",
@@ -34,10 +34,11 @@
     "Modal 24-hour promise gets a clock icon; pay-on-delivery gets a green shield/payment icon; same copy retained.",
     "WhatsApp icon is enlarged in the test request dialog; input remains disabled in isolated test.",
     "Removed duplicate notification bell from empty state, retaining section-level bell.",
-    "Assistant responds as “Agente de [business]” when a business is entered into the local test settings; default remains Antonella IA. This is sessionStorage-only UI personalization, not account/Gmail/backend data."
+    "Assistant responds as “Agente de [business]” when a business is entered into the local test settings; default remains Antonella IA. This is sessionStorage-only UI personalization, not account/Gmail/backend data.",
+    "V51 specificity pass ensures the three capability icons keep distinct subtle neon coral/turquoise/violet across inherited styles, dark and light themes."
   ],
   "qa": {
-    "status": "V50 build prepared; must finish desktop/mobile render checks before calling it validated."
+    "status": "V51 CSS specificity updated after visual check found legacy style overriding colors. Recheck browser and responsive layout required."
   },
   "disabled": [
     "Real AI/provider API",
