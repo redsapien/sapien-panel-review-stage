@@ -1,4 +1,4 @@
-# Sapien · revisión aislada V38
+# Sapien · revisión aislada V39
 
 Solo staging de prueba. Producción no se tocó.
 
@@ -12,4 +12,6 @@ Solo staging de prueba. Producción no se tocó.
 
 Emulación de pantalla no sustituye pruebas con teclado virtual en un teléfono físico.
 
-V38: la acción de detalles queda en la misma fila, a la derecha del precio, incluso en 320 px. La vista del asistente elimina el título repetido para ganar área de conversación.
+V39: la acción de detalles queda en la misma fila, a la derecha del precio, incluso en 320 px. La vista del asistente elimina el título repetido para ganar área de conversación.
+
+V39 structurally separates the web offer footer from the legacy card footer so the price and action stay side-by-side; removed generated duplicate arrows. Visual confirmation on deployed build pending.
