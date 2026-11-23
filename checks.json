@@ -42,8 +42,8 @@
     "resources": "37 HTML/CSS/font/icon/manifest/script resources returned HTTP 200.",
     "browser_light_theme": "menu theme toggle confirmed in previous isolated V8 screenshot, not rechecked for V12",
     "card_geometry": "source CSS and markup unchanged; only pre-card vertical margins change",
-    "script_syntax": "V18 had a malformed registration-call line; corrected in V19, verifying in browser",
-    "request_flow": "V20 local flow implemented; browser test pending."
+    "script_syntax": "V19 fixed; V20 discovered request modal requires .open class; V21 adds it and is pending browser verification.",
+    "request_flow": "V21 local request-preview flow now applies .open and focus; verify open/close in browser."
   },
   "pwa_assets": {
     "mobile": "opaque red-S halo PNGs plus maskable variant",
