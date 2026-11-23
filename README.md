@@ -15,3 +15,5 @@ V51 final specificity update ensures distinct but restrained capability-icon col
 V52 gives the app a dynamically named agent in the header, response labels and navigation for the local test business name; the nav keeps the concise label “Mi agente”. The responsive QA page now loads one exact V52 cascade and fresh iframes at 320/360/390 px.
 
 V53 uses “Mi agente” as neutral tab text; inside the assistant, the name is customized to “Agente de [negocio]”.
+
+V54 reduces only the featured web card min-height on mobile to 270px (262px under 380px) to use vertical space more efficiently while preserving the larger CTA and bottom alignment.
