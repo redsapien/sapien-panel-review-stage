@@ -1,5 +1,5 @@
 {
-  "version": "V39",
+  "version": "V40",
   "scope": "Isolated GitHub Pages preview only; production unchanged.",
   "changes": [
     "Card shows $50.000 COP and “Pago único” at left; “Ver qué incluye” button is larger at right. “Pago contra entrega” is only in modal.",
@@ -9,10 +9,11 @@
     "Chat area expanded on PC and mobile; visualViewport-aware keyboard mode pins composer above keyboard and hides mobile dock while typing.",
     "Info y más receives restrained contrast and hover refinements.",
     "V38 corrects cascade priority so price/Pago único and the larger “Ver qué incluye” action remain left/right in one row at 320px; keeps single arrow; removes redundant assistant heading to expand workspace.",
-    "V39 isolates web-offer footer with a new dedicated class so legacy selectors cannot stack the detail button. Price/Pago único and one text-only larger CTA stay on the same row, including 320px."
+    "V39 isolates web-offer footer with a new dedicated class so legacy selectors cannot stack the detail button. Price/Pago único and one text-only larger CTA stay on the same row, including 320px.",
+    "V40 replaces the card footer layout with a two-track grid to keep the $50.000/Pago único unit separate from the detail button without overlap at 320px or desktop."
   ],
   "qa": {
-    "source": "DOM checks pass. V38 browser screenshot exposed legacy CSS winning in the price/button footer; V39 structurally isolates that footer to prevent the cascade conflict. Fresh live browser visual check pending."
+    "source": "V40 CSS structurally isolates the footer and allocates a fixed button track with a minimum-width price track. Browser visual verification pending."
   },
   "disabled": [
     "Real AI/provider API",
