@@ -51,7 +51,7 @@
     "pwa_install_on_device": "not installed on a physical device",
     "production": "not touched",
     "console": "V27 console showed automatic favicon 404; V28 assigns one local favicon and removes duplicate. No other failed resources found in local request audit; final console recheck after deployment.",
-    "price_layout": "V31 failed visual check (overlap, CTA not seen); V32 replaces structure with dedicated flex row. Verify visually.",
+    "price_layout": "V32 includes a dedicated .web-price-line; the V32 stylesheet must be loaded by the page. Await browser verification after relinking stylesheet and script.",
     "modal_note": "V30 removes .web-compact-pending from the service modal; verify modal no longer shows IA y analítica line.",
     "background": "V30 collapses duplicate background mesh layers and reduces visible mesh alpha to 0.16 desktop / 0.105 mobile; final visual check pending.",
     "greeting_spacing": "V30 increases gap by a few CSS pixels; responsive first fold test pending.",
