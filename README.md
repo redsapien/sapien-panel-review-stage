@@ -16,3 +16,5 @@ Staging aislado. **Producción y su dominio no se modificaron.**
 Antonella IA sigue siendo una demo local: no entra a Gmail ni usa contexto real del registro, no monitoriza, no invoca un modelo/API y no guarda o ejecuta acciones. La conexión real debe diseñarse, autorizarse y probarse por separado.
 
 La emulación móvil no reemplaza un teléfono físico: queda pendiente confirmar teclado nativo e instalación PWA. La revisión V48 fresca y el modal no mostraron errores de consola; los recursos estáticos enlazados revisados respondieron HTTP 200.
+
+V49 lowers the price/terms and increases the CTA near the bottom of the web card; modal delivery/payment surfaces use subtle translucent charcoal/coral.

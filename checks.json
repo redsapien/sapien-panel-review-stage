@@ -1,5 +1,5 @@
 {
-  "version": "V48",
+  "version": "V49",
   "scope": "Isolated GitHub Pages preview only; production unchanged.",
   "changes": [
     "Card shows $50.000 COP and “Pago único” at left; “Ver qué incluye” button is larger at right. “Pago contra entrega” is only in modal.",
@@ -28,18 +28,11 @@
     "V45 unifies all nine service-icon halos and three web capability glyphs into muted single family colors; softens the featured-card outline. Price now uses large $50.000 with a clear supporting line “COP · Pago único”. Additional mobile/desktop category spacing enforced. Modal separators/checks use restrained warm accent.",
     "V46 fixes stylesheet ordering explicitly; bright red CTA, subdued icon circles, simpler featured card edge and additional consistent category breathing room.",
     "V47 final modal cleanup: assurance accents now match Sapien coral, example carousel scrollbar hidden but remains swipeable; all 3 feature icons use same restrained color.",
-    "V48 targets modal CSS outside .app correctly; removes remaining green/blue assurance accents and hides the visual scrollbar while preserving swipe."
+    "V48 targets modal CSS outside .app correctly; removes remaining green/blue assurance accents and hides the visual scrollbar while preserving swipe.",
+    "V49 addresses user screenshots: price/payment row positioned naturally closer to bottom of web card; CTA is larger, lower, white-on-coral red. Modal 24-hour and pay-on-delivery blocks use a restrained translucent black/coral treatment rather than green/blue."
   ],
   "qa": {
-    "desktop": "Fresh V48 loaded at 795×768 browser viewport; reviewed shortened promise, family-title spacing, all three cards, emphasized $50.000 price/secondary COP · Pago único and vivid red CTA. Opened the details modal; it is cleaner, has coral assurance accents and no visible horizontal scrollbar. Fresh page and tested modal had no console errors.",
-    "responsive": "Loaded QA iframe layout at 320, 360 and 390 CSS px by 760 height. Promise wraps naturally at 320/360 and stays one line at 390. Price/meta/CTA remain in one row. Card summaries are shorter. Not a physical phone test.",
-    "copy_and_terms": "Promise exactly “Creamos todo y lo dejamos en automático.” No result guarantee. Nine concise descriptions. Card has $50.000 plus COP · Pago único and no contraentrega terms; modal retains “Pague contra entrega, al verla online”.",
-    "assistant": "Antonella IA remains the distinct assistant name. Existing local-only prompt/response behavior unchanged in V48; earlier build was tested with consecutive turns and no outer-page jump. No real AI/data/API/actions.",
-    "modal": "Opened at desktop. Assurance blocks visually use the coral family; carousel scrollbar hidden while maintaining touch swipe (not physically finger-tested). Request action is still disabled as a demo.",
-    "resources": "Fresh page local linked CSS/JS/logo/SVG assets checked for HTTP 200; v48 CSS/JS and qa-mobile-v48 route load HTTP 200.",
-    "console": "No console error messages on a fresh V48 load or the modal test.",
-    "physical_keyboard_and_device": "Not tested on a physical phone or its native keyboard; emulator uses CSS viewport widths only.",
-    "production": "Production panel and deployed styles remain untouched. Glass/fade behavior was observed but not modified."
+    "source": "Static checks pending; screenshot comparison at mobile widths to be run after publishing."
   },
   "disabled": [
     "Real AI/provider API",
