@@ -1,92 +1,25 @@
 {
-  "status": "public isolated visual review stage V23",
-  "production_untouched": true,
-  "production_backend_or_supabase_loaded": false,
-  "external_calls_and_forms_blocked": true,
-  "visible_stage_banner": false,
-  "source_css": "current public panel stylesheet snapshot; only asset URLs rewritten for the subpath",
-  "cards": {
-    "count": 9,
-    "layout_overridden_by_identity_layer": false,
-    "copy_prices_match_live_source": true,
-    "service_pictograms": "Nine original V6 concepts replace the previous icons",
-    "service_icon_frame": "none; original 32×32 container and 22×22 pictogram dimensions preserved, no layout changes",
-    "service_pictogram_box": "32x32px as in current production CSS",
-    "service_pictogram_asset": "22x22px V6 artwork",
-    "halo": "thin color-matched ring outside artwork, non-layout pseudo-elements; subtle hover/focus effect"
-  },
-  "identity": "V28: Sapien same header position and reduced ~30%; icon strokes with halo; hamburger and service glyph +20% inside original boxes; red menu/back/close/arrow rings; subtle neural mesh behind catalog; tech nav pictograms and Una IA label; browser tab now has explicit SVG favicon.",
-  "pwa": "separate manifest, icons, and stage-scoped static cache; no production worker or data",
-  "interactive_local_demo": [
-    "navigation between sections",
-    "service carousel arrows",
-    "service details modal open/close",
-    "Pedir ahora opens local request preview",
-    "request close/cancel",
-    "Listo shows not-sent message and closes",
-    "account menu and account panes",
-    "business-name preview stored in this tab session only",
-    "theme control",
-    "install prompt or install instructions",
-    "Una IA prototype: prompt chips/text input, visual processing steps, explicit reply that no real AI was connected"
-  ],
-  "disabled": [
-    "real authentication and Supabase/backend",
-    "profile save",
-    "request submission and payments",
-    "real AI/model API",
-    "chat persistence",
-    "microphone and chat attachments",
-    "Push notifications/integrations",
-    "external site links"
+  "version": "V37",
+  "scope": "Isolated GitHub Pages preview only; production unchanged.",
+  "changes": [
+    "Card shows $50.000 COP and “Pago único” at left; “Ver qué incluye” button is larger at right. “Pago contra entrega” is only in modal.",
+    "Carousel headings have consistent breathing room on mobile and desktop.",
+    "Sapien wordmark artwork preserved; apien moved 4 SVG units toward S.",
+    "Navigation is labeled “Asistente” for nontechnical users. Main assistant copy is short and topic prompts cover selling/web/improvements.",
+    "Chat area expanded on PC and mobile; visualViewport-aware keyboard mode pins composer above keyboard and hides mobile dock while typing.",
+    "Info y más receives restrained contrast and hover refinements."
   ],
   "qa": {
-    "browser_desktop": "Fresh V36 page loaded HTTP 200 with zero browser console errors. Clicked Sapien IA, entered a query and pressed Enter; showed local processing then a short sales recommendation labeled as demo/not real AI. Opened/closed detail modal; domain block absent. Account menu opened; back and close buttons visually matched as 44px red circles.",
-    "browser_responsive": "Loaded QA page at 320/360/390 CSS px. At 320px, first service card and Marketing y automatización heading/top of next row remain visible; nav and icon badges render within the available width. Sapien IA composer and send control visible above dock in emulated viewport.",
-    "ai_prompt": "Enter submits. Shift+Enter preserves multiline entry. Topic-keyword local response categories: sales, web/presence, automation, pricing, default. Explicit disclaimer says no real AI or business-data analysis. No storage, network call, microphone, or file attachments.",
-    "ai_keyboard": "visualViewport resize listener and composer scroll-into-view behavior implemented; tested in desktop browser and narrow CSS-pixel emulation, not on a physical soft keyboard.",
-    "modal_domain": "V36 removes the entire suggested-domain block, including “sunegocio.redsapien.com” and “Dirección sugerida”. The service details modal opens/closes.",
-    "notification_icon": "Tech bell used in the Notificaciones heading and its empty state, separate from Info y más icon.",
-    "circles": "Back, account X, service-detail X and request X share 44×44px circle, matching halo, 21px glyph and hover transition. Visual check at desktop menu and service modal.",
-    "service_icons": "Double fine circular accent halo centered within the existing 32×32px production icon box; service artwork dimensions unchanged at 26.4px. Reduced-motion CSS disables decorative motion.",
-    "console": "A fresh V36 load and tested navigation/modal/AI flow produced zero browser console errors.",
-    "resources": "All 42 statically referenced page, CSS, manifest and service-worker precache resources returned HTTP 200.",
-    "physical_mobile": "Not tested on a physical handset.",
-    "pwa_install_on_device": "Not installed/tested on physical device.",
-    "production": "Not modified."
+    "source": "DOM/source checks below; live browser checks pending.",
+    "device": "No physical device test."
   },
-  "pwa_assets": {
-    "mobile": "opaque red-S halo PNGs plus maskable variant",
-    "desktop": "transparent red-S halo PNGs",
-    "separate_stage_scope": true,
-    "manifests": "separate isolated mobile and desktop manifests selected locally; device install tests pending"
-  },
-  "greeting": {
-    "nine_short_questions": "rotate on a timer unless reduced-motion is enabled",
-    "brand_name": "user can type in existing business field; only stored in current browser tab session, not sent or saved to a user account",
-    "approved_copy": "slogan including Nosotr@s and all nine service card titles, descriptions, status, and prices match the live HTML"
-  },
-  "layout": {
-    "desktop": "Only pre-first shelf whitespace tuned; card markup, card grid and card text remain sourced from production stylesheet/HTML.",
-    "mobile_first_fold": "At 320/360/390 CSS-pixel emulation the first service card remains full-width per source carousel and the Marketing y automatización heading/top of the next card are visible above the bottom dock.",
-    "ai_mobile": "V27 fits the chat panel above the mobile dock; processing and conversation can scroll inside their designated space.",
-    "global_copy": "Keeps all service card copy and prices as production, except the requested welcome phrase; shortened redundant empty/info labels and compacted whitespace."
-  },
-  "version": "V36",
-  "changes": [
-    "Removed the entire suggested-domain block from the service modal.",
-    "Simplified Sapien IA header, prompts, disclaimer and local response.",
-    "Added a distinct bell glyph to the Notificaciones section.",
-    "Unified all back/X/close controls at 44px with the same red circular treatment.",
-    "Top Sapien wordmark uses no visible container.",
-    "Enter submits; Shift+Enter adds a line. Local answer offers a concise general suggestion by topic and states it was not generated by a connected AI.",
-    "Virtual-keyboard visual viewport updates CSS height; composer scrolls into view.",
-    "Service icon rings centered and circular; hover moves outer ring softly.",
-    "Notification empty state now uses the same tech bell icon as section header; removed green check mark."
+  "disabled": [
+    "Real AI/provider API",
+    "Live account review or monitoring",
+    "Actual activation of integrations/agents",
+    "Saving chat/profile",
+    "Sending requests or payments",
+    "Push and notification backend"
   ],
-  "price_layout": "Dedicated .web-price-line uses flex: price left, payment badge right; details CTA full-width beneath. V32 browser check pending.",
-  "modal_note": "IA y analítica · por desplegar is removed from the suggested-domain modal. Browser test pending.",
-  "background": "Single layer mesh opacity .055 desktop / .038 mobile; intended nearly transparent.",
-  "greeting_spacing": "4px more breathing space around Hola, greeting and slogan.",
-  "summary": "V36 isolated review stage only; no production publication. Assets and service-worker pre-cache verified."
+  "note": "The local chat still gives rule-based demo recommendations only; it does not monitor live business state or activate actions."
 }
