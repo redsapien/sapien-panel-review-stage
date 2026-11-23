@@ -1,21 +1,18 @@
-# Sapien · revisión aislada V47
+# Sapien · revisión aislada V48
 
-**Staging únicamente. El panel productivo no se modificó.**
+Staging aislado. **Producción y su dominio no se modificaron.**
 
-- Lema: “Creamos todo y lo dejamos en automático.” Sin promesa de resultados de ventas.
-- Nueve textos de servicio más cortos y directos; estados y aclaraciones necesarias se mantienen en la tarjeta.
-- Más aire uniforme entre título de cada familia, slider y tarjetas en PC y móvil emulado.
-- Su web + IA muestra $50.000 con “COP · Pago único” en una línea secundaria legible y un botón rojo de acción a la derecha. “Pague contra entrega, al verla online” queda exclusivamente en el modal.
-- Los iconos y los símbolos de capacidades de la tarjeta web usan círculos discretos y acento coral/rojo con una gama contenida. La tarjeta destacada tiene borde y sombras reducidas.
-- Modal más sobrio: beneficios/condiciones en coral Sapien, scrollbar del carrusel oculto sin desactivar el deslizamiento. El texto de pago acordado sigue visible. La acción de solicitud solo cierra la demostración: no envía ni guarda.
-- Se observó en producción el comportamiento actual del velo móvil (fondo de navegación traslúcido y cabecera con desvanecimiento progresivo). Se documenta, no se cambia.
+- Lema: “Creamos todo y lo dejamos en automático.”, sin promesa de ventas.
+- Descripciones de servicio más cortas, humanas y directas.
+- Espaciado coherente entre categorías, sliders y tarjetas.
+- La tarjeta Su web + IA resalta $50.000; debajo muestra “COP · Pago único”. Botón rojo “Ver qué incluye” a la derecha. Los términos contraentrega permanecen únicamente en el modal.
+- Iconos y símbolos de la tarjeta web con una paleta por familia discreta; círculo translucido sutil; borde de tarjeta más suave.
+- Modal simplificado, con condiciones en coral Sapien; la lista de ejemplos sigue deslizable sin barra horizontal permanente.
+- Lema, contenidos, CTA y modal se inspeccionaron en escritorio y emuladores CSS 320/360/390 px.
+- En producción se observó el velo móvil existente (barra translúcida y desvanecimiento vertical en cabecera), pero no se editó.
 
-## Validación
+## Límites y QA pendiente
 
-Se inspeccionaron escritorio y emulación responsive a 320, 360 y 390 CSS px. Se probó el modal y la interacción local de Antonella; no mueve la página al enviar. El texto de precio, la ubicación del pago y la estructura se cotejaron. Las referencias estáticas de la página revisadas responden HTTP 200.
+Antonella IA sigue siendo una demo local: no entra a Gmail ni usa contexto real del registro, no monitoriza, no invoca un modelo/API y no guarda o ejecuta acciones. La conexión real debe diseñarse, autorizarse y probarse por separado.
 
-**Límites:** la consola del navegador mostró un error genérico 404 sin URL identificable; las rutas estáticas conocidas sí respondieron 200, pero no afirmamos consola sin errores. No se probó con teléfono/teclado real ni instalación PWA.
-
-Antonella IA sigue siendo una demo local de respuestas por reglas: no consulta Gmail, el negocio, monitorización real ni un modelo conectado; no guarda conversaciones ni realiza acciones. Integraciones/API reales necesitan autorización, backend seguro y QA independiente.
-
-V48 corrects the final modal selector to target its actual DOM placement outside .app, unifying assurances to coral and hiding the visible scrollbar without disabling swipe.
+La emulación móvil no reemplaza un teléfono físico: queda pendiente confirmar teclado nativo e instalación PWA. La revisión V48 fresca y el modal no mostraron errores de consola; los recursos estáticos enlazados revisados respondieron HTTP 200.

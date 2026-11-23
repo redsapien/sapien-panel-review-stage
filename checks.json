@@ -31,7 +31,15 @@
     "V48 targets modal CSS outside .app correctly; removes remaining green/blue assurance accents and hides the visual scrollbar while preserving swipe."
   ],
   "qa": {
-    "source": "V48 static selectors checked; final desktop/mobile browser verification pending."
+    "desktop": "Fresh V48 loaded at 795×768 browser viewport; reviewed shortened promise, family-title spacing, all three cards, emphasized $50.000 price/secondary COP · Pago único and vivid red CTA. Opened the details modal; it is cleaner, has coral assurance accents and no visible horizontal scrollbar. Fresh page and tested modal had no console errors.",
+    "responsive": "Loaded QA iframe layout at 320, 360 and 390 CSS px by 760 height. Promise wraps naturally at 320/360 and stays one line at 390. Price/meta/CTA remain in one row. Card summaries are shorter. Not a physical phone test.",
+    "copy_and_terms": "Promise exactly “Creamos todo y lo dejamos en automático.” No result guarantee. Nine concise descriptions. Card has $50.000 plus COP · Pago único and no contraentrega terms; modal retains “Pague contra entrega, al verla online”.",
+    "assistant": "Antonella IA remains the distinct assistant name. Existing local-only prompt/response behavior unchanged in V48; earlier build was tested with consecutive turns and no outer-page jump. No real AI/data/API/actions.",
+    "modal": "Opened at desktop. Assurance blocks visually use the coral family; carousel scrollbar hidden while maintaining touch swipe (not physically finger-tested). Request action is still disabled as a demo.",
+    "resources": "Fresh page local linked CSS/JS/logo/SVG assets checked for HTTP 200; v48 CSS/JS and qa-mobile-v48 route load HTTP 200.",
+    "console": "No console error messages on a fresh V48 load or the modal test.",
+    "physical_keyboard_and_device": "Not tested on a physical phone or its native keyboard; emulator uses CSS viewport widths only.",
+    "production": "Production panel and deployed styles remain untouched. Glass/fade behavior was observed but not modified."
   },
   "disabled": [
     "Real AI/provider API",
@@ -43,6 +51,6 @@
   ],
   "note": "The local chat still gives rule-based demo recommendations only; it does not monitor live business state or activate actions.",
   "assistant_name": "Antonella IA. Sapien remains the panel/product brand.",
-  "assistant_capability": "Antonella IA is still a local rule-based demo. No Gmail/business context, real model, API, monitoring, persistent chat, tool action, or activation flow is connected.",
+  "assistant_capability": "Antonella IA remains local demo only; it does not access Gmail or business context, monitor activity, use an external model/API, save chats or execute actions.",
   "production_review": "Observed deployed mobile nav assets: panel-nav-glass.js sets a translucent gradient; panel-top-glass-veil.js uses a vertical mask fade. Neither production asset or deployment was modified."
 }
