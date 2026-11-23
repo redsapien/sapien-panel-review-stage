@@ -1,4 +1,4 @@
-# Sapien · revisión aislada V26
+# Sapien · revisión aislada V27
 
 Esta es una propuesta pública de staging independiente; producción `panel.redsapien.co` no se modificó.
 
@@ -13,6 +13,8 @@ Esta es una propuesta pública de staging independiente; producción `panel.reds
 
 Verificación navegador emulado no sustituye QA en teléfono físico, instalación PWA ni conexión real del agente.
 
-- V26 corrige el primer pliegue observado a 320 px: la bienvenida usa todo el ancho de contenido y se elimina el margen residual bajo la primera hilera; no se altera el ancho ni el texto de tarjetas.
+- V27 corrige el primer pliegue observado a 320 px: la bienvenida usa todo el ancho de contenido y se elimina el margen residual bajo la primera hilera; no se altera el ancho ni el texto de tarjetas.
 
-- V26 recorta 30 px del espacio excesivo antes de la segunda categoría en pantallas compactas para dejar su título y el inicio de las tarjetas visibles arriba del dock.
+- V27 recorta 30 px del espacio excesivo antes de la segunda categoría en pantallas compactas para dejar su título y el inicio de las tarjetas visibles arriba del dock.
+
+- V27 adapta la tarjeta de «Una IA» a la altura útil de móvil; el campo para escribir y enviar queda fuera del dock y el hilo puede desplazarse dentro de su panel.

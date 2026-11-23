@@ -42,7 +42,7 @@
   ],
   "qa": {
     "browser_desktop": "V23 visual screenshot reviewed at 1366px; service detail modal, local request modal, close/cancel/finish and account menu tested. Final browser console had no errors.",
-    "browser_responsive": "V25 at 320: marketing title remained too close to bottom dock. V26 uses a compact-only -30px gap before the second category; visually confirm and watch for overlap.",
+    "browser_responsive": "V26 confirms category title above dock at 320/360/390. V27 composer placement needs final browser screenshot verification.",
     "request_flow": "Pedir ahora opens local modal. Close and Listo work. Final toast confirmed no request is sent/saved. Phone/uploads remain disabled.",
     "hover_and_reduced_motion": "CSS hover/focus effects and reduced-motion override in place; no physical device hover/motion QA.",
     "pwa_install_on_device": "not tested on a physical phone or desktop install",
@@ -66,9 +66,10 @@
   },
   "layout": {
     "desktop": "Only pre-first shelf whitespace tuned; card markup, card grid and card text remain sourced from production stylesheet/HTML.",
-    "mobile_first_fold": "V26 reduces the excess section gap on mobile only; title/card width and content are unchanged."
+    "mobile_first_fold": "V26 reduces the excess section gap on mobile only; title/card width and content are unchanged.",
+    "ai_mobile": "V27 fits the chat panel above the mobile dock; processing and conversation can scroll inside their designated space."
   },
-  "version": "V26",
+  "version": "V27",
   "changes": [
     "Unified the circle, size, red halo and hover treatment for back and close buttons.",
     "Hamburger glyph +20% while original hit target and layout remain.",
