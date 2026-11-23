@@ -1,10 +1,10 @@
-# Sapien · revisión aislada V35
+# Sapien · revisión aislada V36
 
-- Modal: retirado el bloque completo del dominio/dirección sugerida.
-- Sapien IA: copia más corta; el prompt responde con una sugerencia general según tema (ventas, presencia digital, automatización, precio u otro). Respuesta local de reglas, no IA real; no envía ni guarda texto.
-- Enter envía; Shift+Enter inserta una línea. En móvil la altura escucha al teclado virtual y el campo se desplaza a la vista.
-- Iconos de servicios quedan centrados dentro de su caja 32×32 px con dos anillos circulares finos y hover suave.
-- Campana tecnológica propia en Notificaciones, distinta de Info.
-- X, volver y cerrar comparten círculo rojo de 44×44 px.
+- Modal: dominio/dirección sugerida fuera por completo.
+- Sapien IA breve; prompts por Enter, Shift+Enter para nueva línea. La demo ofrece una sugerencia general de acuerdo con el tema, muestra animación y aclara que no se consultó una IA real.
+- Composer ajusta el espacio al teclado móvil.
+- Notificaciones usa una campana tech tanto en el encabezado como en su estado vacío; reemplaza el check verde.
+- Iconos del catálogo centrados con doble halo circular delicado dentro de la caja original.
+- X/volver/cerrar mantienen el mismo círculo de 44×44.
 
-Staging separado; producción intacta. Conexión real de IA, auth, pagos y guardado siguen desactivados.
+Solo staging, producción intacta; sin API real, guardado o envío.
