@@ -1,11 +1,10 @@
-# Sapien · revisión aislada V32
+# Sapien · revisión aislada V35
 
-- Fondo de partículas/red casi transparente, en una sola capa tras el catálogo.
-- Algo más de separación alrededor de «Hola», la pregunta de bienvenida y la frase comercial.
-- Módulo nombrado «Sapien IA» de forma consistente. El chat sigue siendo una prueba local sin conexión a agente real.
-- La tarjeta $50.000 COP organiza el precio a la izquierda, «Pago contra entrega» a la derecha y el CTA debajo en una fila completa; el importe no se envuelve dentro de la etiqueta.
-- Quitada del modal del dominio la línea «IA y analítica · por desplegar».
+- Modal: retirado el bloque completo del dominio/dirección sugerida.
+- Sapien IA: copia más corta; el prompt responde con una sugerencia general según tema (ventas, presencia digital, automatización, precio u otro). Respuesta local de reglas, no IA real; no envía ni guarda texto.
+- Enter envía; Shift+Enter inserta una línea. En móvil la altura escucha al teclado virtual y el campo se desplaza a la vista.
+- Iconos de servicios quedan centrados dentro de su caja 32×32 px con dos anillos circulares finos y hover suave.
+- Campana tecnológica propia en Notificaciones, distinta de Info.
+- X, volver y cerrar comparten círculo rojo de 44×44 px.
 
-Staging público aislado: producción no se tocó. Envíos, guardados, pagos y conexión real de IA siguen apagados.
-
-- V32 usa una fila flex independiente para evitar que el texto de pago se mueva o se superponga con el precio; el botón va debajo.
+Staging separado; producción intacta. Conexión real de IA, auth, pagos y guardado siguen desactivados.
