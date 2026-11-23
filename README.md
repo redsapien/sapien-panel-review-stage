@@ -1,14 +1,15 @@
-# Sapien · revisión aislada V42
+# Sapien · revisión aislada V43
 
-- **Sapien** sigue siendo el nombre del panel y la marca. **Antonella IA** es el nombre del asistente, con copy sencillo para dueños, emprendedores y profesionales.
-- Se armonizaron los nueve iconos de servicio: contorno consistente, detalle acentuado por familia (Presencia, Marketing, Control) y doble círculo/translucidez más sutil, sin modificar la geometría de las tarjetas.
-- Los iconos de navegación mantienen su dibujo de línea y reciben una señal roja discreta solo en el módulo activo.
-- Títulos de categorías usan Space Grotesk y una línea roja/terracota/bronce tenue coherente con la S original. La S original del wordmark no se altera.
-- El chat usa “Antonella IA”, una pregunta breve y sugerencias simples; las respuestas se mantienen en el área de conversación y el foco regresa al campo sin desplazar la página.
-- Info y más mantiene contenido y orden; se armonizan márgenes, bordes y tarjetas.
+Staging público de evaluación; producción no se modificó.
 
-**Límite:** Antonella sigue siendo una demostración local por reglas, no accede a cuentas ni datos, no monitorea estado real, no ejecuta acciones y no está conectada a una API. Para producción se requiere implementar y probar proveedor/servidor, autorización, permisos y acciones.
+- **Sapien** es el panel/producto. **Antonella IA** es el nombre del asistente. Interfaz y sugerencias usan lenguaje sencillo para emprendedores, profesionales y dueños de negocio.
+- Nueve iconos de servicio comparten línea limpia, círculos translúcidos de halo bajo y acentos apagados por familia; los iconos de navegación/settings usan el mismo lenguaje visual. La S original del wordmark se preserva.
+- Categorías y tarjetas tienen separación uniforme, manteniendo textos, orden y geometría de servicio. La tarjeta web muestra $50.000 COP + “Pago único” a la izquierda y “Ver qué incluye” a la derecha; “Pague contra entrega, al verla online” está solamente en el modal.
+- “Info y más” conserva sus secciones pero con ritmo, bordes y campana más limpios.
+- El campo se enfoca sin desplazar la página; las nuevas respuestas aparecen en el historial interno y conservan turnos previos. El listener de `visualViewport` posiciona el composer sobre el teclado virtual en móvil.
 
-Solo URL aislada de revisión; producción y dominio panel.redsapien.co intactos. QA en móvil emulado; falta validación en dispositivo físico/teclado real.
+**QA hecho:** navegador en escritorio; flujo de asistente con dos consultas; modal; Info y más; anchos emulados de 320, 360 y 390 CSS px. Sin errores de consola en los flujos probados. 29 referencias locales del HTML y las nuevas imágenes/CSS/JS respondieron HTTP 200.
 
-V43 restores the V41 layout layer and removes rainbow accents from the web capability icons; it uses a single subtle family accent. Browser revalidation is required.
+**QA pendiente:** teléfono físico, teclado virtual nativo, instalación/actualización PWA y prueba integral de producción.
+
+**Límite funcional:** Antonella aún es una demo local de reglas; no usa datos del negocio, modelo de IA o API, no monitorea actividad, no realiza acciones y no guarda chats. La conexión real necesitará autorización, arquitectura segura, permisos, integración y pruebas antes de producción.

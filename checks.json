@@ -21,7 +21,15 @@
     "Restored all V41 layout rules before V42 identity overrides; explicitly aligns web offer price and CTA side-by-side; recolors capability glyphs and raises icon-ring specificity; removed chat focus scrollIntoView to keep viewport stable."
   ],
   "qa": {
-    "source": "V43 DOM/asset checks pass; waiting for live browser verification at desktop, 320/360/390 emulation and repeated chat turns."
+    "desktop_browser": "V43 loaded fresh over HTTPS. Click-tested main navigation, assistant, two consecutive local prompts and web service details. Last answer remains in conversation, the page does not jump on input focus. No browser console error messages during tested flow.",
+    "mobile_emulation": "QA iframe layouts viewed at 320, 360 and 390 CSS px × 760. Card price/Pago único and details CTA render in one row; section headings/cards have consistent breathing room; Info y más, notification bell and empty state fit; assistant entry, sample prompt, reply and composer visible at 320. This is browser CSS-width emulation, not physical device.",
+    "assistant": "Display/navigation name Antonella IA; user prompt submits with Enter; local reply appears in chat and retains earlier messages, no outer page scrollIntoView. Response explicitly says no real AI/data was consulted.",
+    "service_modal": "Opened from CTA in 390px emulation; modal payment phrase appears in modal and not on the card. Modal links/action are disabled in test stage.",
+    "icons": "Nine V7 SVGs parse; default strokes #E9E8E6; a single quiet accent per service family. Page uses existing S wordmark; the original S path was preserved from previous version.",
+    "assets": "29 local page references collected from live HTML, all returned HTTP 200; the new V7 icon family and V43 CSS/JS assets also return HTTP 200.",
+    "console": "No browser console error messages in V43 navigation, chat, modal or Info & más checks.",
+    "physical_keyboard": "Not tested with a physical phone or its native soft keyboard. VisualViewport keyboard behavior is coded, but needs device QA.",
+    "production": "Not changed. Production migration still requires Cristian’s explicit approval and separate release/real integration QA."
   },
   "disabled": [
     "Real AI/provider API",
@@ -33,5 +41,5 @@
   ],
   "note": "The local chat still gives rule-based demo recommendations only; it does not monitor live business state or activate actions.",
   "assistant_name": "Antonella IA. Sapien remains the panel/product brand.",
-  "assistant_capability": "Local heuristic demo only; no business account data, live monitoring, external model, actions, API credentials or persistence."
+  "assistant_capability": "Antonella is still an explicitly local rule-based design demo; not connected to account data, monitoring, a model provider, tools/actions, saved history or API credentials."
 }
