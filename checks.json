@@ -32,7 +32,7 @@
   ],
   "qa": {
     "browser_desktop": "V14 screenshot confirms menu row is no longer oval; V15 background visibility final browser check pending.",
-    "browser_responsive": "V13 sizes and first shelf checked; V15 background placement pending browser check",
+    "browser_responsive": "V15 render inspected at 320/360/390; V16 first-fold follow-up pending.",
     "carousel_touch_swipe": "not tested",
     "pwa_install_on_device": "not tested",
     "mobile_physical": "not tested",
@@ -67,6 +67,7 @@
   },
   "layout": {
     "card_width_height_padding": "unchanged relative to production stylesheet",
-    "first_view": "first category and next category heading now fit better; tightened only vertical margins before first shelf"
+    "first_view": "first category and next category heading now fit better; tightened only vertical margins before first shelf",
+    "mobile_first_fold": "V16 trims only hero/tagline/section gaps on mobile; no service-card width, height, copy, typography, or navigation dimensions changed."
   }
 }
