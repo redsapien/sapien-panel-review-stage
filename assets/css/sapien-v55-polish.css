@@ -1,0 +1,24 @@
+/* V55 · clean mobile modal stack, product identity and keyboard-safe Sapien IA composition. */
+/* Two assurance rows are intentionally vertical; the icon stays beside each one-line message. */
+html body #web-service-modal .web-service-modal-fullscreen .web-service-assurances{display:flex!important;flex-direction:column!important;gap:8px!important;margin:10px 3px 5px!important}
+html body #web-service-modal .web-service-modal-fullscreen .web-assurance-card{width:100%!important;min-height:58px!important;height:auto!important;display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:11px!important;padding:9px 12px!important;box-sizing:border-box!important}
+html body #web-service-modal .web-service-modal-fullscreen .web-assurance-card strong{white-space:nowrap!important;font-size:.91rem!important;line-height:1.25!important}
+@media(max-width:360px){html body #web-service-modal .web-service-modal-fullscreen .web-assurance-card{min-height:54px!important;padding:8px 10px!important}html body #web-service-modal .web-service-modal-fullscreen .web-assurance-card strong{font-size:.84rem!important}}
+/* Product copy in the assistant: Sapien IA is the module; the business name only personalizes the agent inside it. */
+#view-mural .sapien-ai-kicker{color:#ff8062!important;letter-spacing:.13em!important}
+#view-mural .sapien-ai-heading h3{font-weight:760!important;letter-spacing:-.025em!important}
+#view-mural .sapien-ai-message-label{color:#ff9076!important}
+/* Prompt chips sit above a real scroll region; composer never overlays them. */
+html body .app>.main>.content #view-mural .sapien-chat-preview{display:flex!important;flex-direction:column!important;min-height:0!important}
+html body .app>.main>.content #view-mural .sapien-ai-head{flex:0 0 auto!important}
+html body .app>.main>.content #view-mural .sapien-ai-chat-window{flex:1 1 auto!important;min-height:150px!important;overflow-y:auto!important;padding-bottom:8px!important;scroll-padding-bottom:18px!important}
+html body .app>.main>.content #view-mural .sapien-ai-quick-prompts{position:relative!important;z-index:1!important;flex:0 0 auto!important;margin:0 0 4px 0!important;padding:2px 0 4px!important;background:transparent!important}
+html body .app>.main>.content #view-mural .sapien-ai-compose{position:relative!important;z-index:4!important;flex:0 0 auto!important;margin-top:4px!important;bottom:auto!important}
+html body .app>.main>.content #view-mural .sapien-ai-compose textarea{font-size:16px!important;line-height:1.35!important;min-height:44px!important;max-height:96px!important;padding:10px 11px!important}
+html body .app>.main>.content #view-mural .sapien-ai-disclaimer{flex:0 0 auto!important;margin-top:4px!important}
+@media(max-width:720px){html body .app>.main>.content #view-mural .sapien-chat-preview{height:calc(100dvh - 224px)!important;min-height:420px!important;padding:13px!important;gap:9px!important;overflow:hidden!important}html body .app>.main>.content #view-mural .sapien-ai-chat-window{min-height:105px!important;max-height:none!important;gap:11px!important}html body .app>.main>.content #view-mural .sapien-ai-quick-prompts{gap:5px!important;margin-bottom:3px!important;padding-bottom:3px!important}html body .app>.main>.content #view-mural .sapien-ai-quick-prompts button{min-height:34px!important;padding:6px 9px!important;font-size:.76rem!important}html body .app>.main>.content #view-mural .sapien-ai-compose{margin-top:2px!important;padding:7px!important}html body .app>.main>.content #view-mural .sapien-ai-send{width:42px!important;height:42px!important;flex-basis:42px!important}}
+@media(prefers-reduced-motion:reduce){html body .app>.main>.content #view-mural .sapien-ai-chat-window{scroll-behavior:auto!important}}
+/* Info y más: one useful editorial item instead of multiple empty campaigns. */
+#view-news .news-section .news-carousel{grid-template-columns:minmax(0,1fr)!important;display:grid!important}
+#view-news .news-section .news-card{min-height:118px!important}
+#view-news .sapien-fragments-teaser[hidden]{display:none!important}
