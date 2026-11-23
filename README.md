@@ -1,4 +1,4 @@
-# Sapien · revisión aislada V24
+# Sapien · revisión aislada V26
 
 Esta es una propuesta pública de staging independiente; producción `panel.redsapien.co` no se modificó.
 
@@ -12,3 +12,7 @@ Esta es una propuesta pública de staging independiente; producción `panel.reds
 - Se revisaron las capturas que compartió Cristian y se usó la estructura clara del chat como referencia; no se copiaron logos ni marca de Zapia.
 
 Verificación navegador emulado no sustituye QA en teléfono físico, instalación PWA ni conexión real del agente.
+
+- V26 corrige el primer pliegue observado a 320 px: la bienvenida usa todo el ancho de contenido y se elimina el margen residual bajo la primera hilera; no se altera el ancho ni el texto de tarjetas.
+
+- V26 recorta 30 px del espacio excesivo antes de la segunda categoría en pantallas compactas para dejar su título y el inicio de las tarjetas visibles arriba del dock.
