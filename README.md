@@ -17,3 +17,5 @@ V39: la acción de detalles queda en la misma fila, a la derecha del precio, inc
 V39 structurally separates the web offer footer from the legacy card footer so the price and action stay side-by-side; removed generated duplicate arrows. Visual confirmation on deployed build pending.
 
 V40: precio y botón ocupan columnas explícitas con ancho mínimo en móvil, evitando superposición con los estilos anteriores.
+
+V41 removes legacy button-class collisions and generated duplicate arrows; the price and action use an explicit two-column grid.
