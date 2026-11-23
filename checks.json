@@ -51,11 +51,12 @@
     "pwa_install_on_device": "not installed on a physical device",
     "production": "not touched",
     "console": "V27 console showed automatic favicon 404; V28 assigns one local favicon and removes duplicate. No other failed resources found in local request audit; final console recheck after deployment.",
-    "price_layout": "V32 includes a dedicated .web-price-line; the V32 stylesheet must be loaded by the page. Await browser verification after relinking stylesheet and script.",
-    "modal_note": "V30 removes .web-compact-pending from the service modal; verify modal no longer shows IA y analítica line.",
-    "background": "V30 collapses duplicate background mesh layers and reduces visible mesh alpha to 0.16 desktop / 0.105 mobile; final visual check pending.",
-    "greeting_spacing": "V30 increases gap by a few CSS pixels; responsive first fold test pending.",
-    "module_label": "Sapien IA replaces Una IA on sidebar, dock, tooltip, section title and accessible name."
+    "price_layout": "V32 screenshot checked: $50.000 COP and Pago contra entrega are separated on one row, CTA is on the row below, no overlap.",
+    "modal_note": "V32 detail modal reviewed; removed IA y analítica · por desplegar row is absent.",
+    "background": "V32 desktop screenshot: network mesh is nearly imperceptible behind catalog; no content obstruction.",
+    "greeting_spacing": "V32 screenshot shows added breathing space around Hola/question/slogan while keeping marketing heading/top of second shelf in first viewport.",
+    "module_label": "Sapien IA replaces Una IA on sidebar, dock, tooltip, section title and accessible name.",
+    "favicon": "V33 includes favicon.ico and an SVG rel=icon; console 404s suspected to be browser default-icon request; final console check pending."
   },
   "pwa_assets": {
     "mobile": "opaque red-S halo PNGs plus maskable variant",
@@ -74,13 +75,14 @@
     "ai_mobile": "V27 fits the chat panel above the mobile dock; processing and conversation can scroll inside their designated space.",
     "global_copy": "Keeps all service card copy and prices as production, except the requested welcome phrase; shortened redundant empty/info labels and compacted whitespace."
   },
-  "version": "V32",
+  "version": "V33",
   "changes": [
     "Softer, almost transparent background mesh; duplicate background layers removed.",
     "Greeting sections gain a little breathing room.",
     "Hablemos/Una IA renamed Sapien IA in desktop/mobile navigation and title.",
     "$50,000 COP paired with Pago contra entrega beside the price; CTA on the next row.",
-    "Removed IA y analítica · por desplegar note from the suggested-domain modal."
+    "Removed IA y analítica · por desplegar note from the suggested-domain modal.",
+    "Added a local ICO favicon as well as the SVG icon to avoid browsers requesting a missing default favicon."
   ],
   "price_layout": "Dedicated .web-price-line uses flex: price left, payment badge right; details CTA full-width beneath. V32 browser check pending.",
   "modal_note": "IA y analítica · por desplegar is removed from the suggested-domain modal. Browser test pending.",
