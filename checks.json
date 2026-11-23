@@ -31,8 +31,8 @@
     "profile save remains disabled; brand-name typing only previews the greeting for this browser tab"
   ],
   "qa": {
-    "browser_desktop": "V13 visually inspected; V14 nav gear pill correction and hover behavior require final check.",
-    "browser_responsive": "V13 rendered at 320/360/390 widths; V14 final check pending",
+    "browser_desktop": "V14 screenshot confirms menu row is no longer oval; V15 background visibility final browser check pending.",
+    "browser_responsive": "V13 sizes and first shelf checked; V15 background placement pending browser check",
     "carousel_touch_swipe": "not tested",
     "pwa_install_on_device": "not tested",
     "mobile_physical": "not tested",
