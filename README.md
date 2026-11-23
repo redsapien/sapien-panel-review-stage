@@ -1,4 +1,4 @@
-# Sapien · revisión aislada V31
+# Sapien · revisión aislada V32
 
 - Fondo de partículas/red casi transparente, en una sola capa tras el catálogo.
 - Algo más de separación alrededor de «Hola», la pregunta de bienvenida y la frase comercial.
@@ -7,3 +7,5 @@
 - Quitada del modal del dominio la línea «IA y analítica · por desplegar».
 
 Staging público aislado: producción no se tocó. Envíos, guardados, pagos y conexión real de IA siguen apagados.
+
+- V32 usa una fila flex independiente para evitar que el texto de pago se mueva o se superponga con el precio; el botón va debajo.
