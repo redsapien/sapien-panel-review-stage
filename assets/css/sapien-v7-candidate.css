@@ -1,0 +1,31 @@
+/* Sapien V7 panel identity candidate — visual-only overrides, not a release. */
+:root{--sv7-red:#ff3c00;--sv7-mint:#62d2c1;--sv7-blue:#76b9ff;--sv7-violet:#b39aff;--sv7-coral:#ff8b78;--sv7-pink:#e7a4df;--sv7-green:#80d7ad;--sv7-amber:#e9bd75;--sv7-sky:#84c8eb;--sv7-lilac:#c3a6f4}
+/* Independent centered masthead below the account controls: it does not compete with the business mark, menu, or Colombian pride line. */
+.sapien-brand-masthead{box-sizing:border-box;position:relative;z-index:2;display:grid;place-items:center;width:min(100%,1320px);min-height:58px;margin:0 auto;padding:10px 16px 12px;border-bottom:1px solid rgba(225,235,235,.065);background:linear-gradient(180deg,rgba(20,24,26,.14),rgba(20,24,26,0));}
+.sapien-brand-masthead img{display:block;width:136px;height:38px;object-fit:contain;filter:drop-shadow(0 1px 0 rgba(255,255,255,.025))}
+html[data-theme="light"] .sapien-brand-masthead{border-bottom-color:rgba(38,52,58,.1);background:linear-gradient(180deg,rgba(255,255,255,.25),transparent)}
+html[data-theme="light"] .sapien-brand-masthead img{content:url('../brand/sapien-wordmark-v7-light.svg')}
+/* Original nine pictograms remain inline and untouched; tint and translucent dual halo are purely decorative. */
+#view-ecosystem .ecosystem-card{--sv7-accent:var(--sv7-red)}
+#view-ecosystem .ecosystem-icon{position:relative;z-index:1;display:grid;place-items:center;color:var(--sv7-accent)!important;border:1px solid color-mix(in srgb,var(--sv7-accent) 23%,transparent)!important;background:radial-gradient(circle at 50% 48%,color-mix(in srgb,var(--sv7-accent) 14%,transparent),rgba(255,255,255,.016) 70%)!important;box-shadow:0 0 0 3px color-mix(in srgb,var(--sv7-accent) 4%,transparent),0 0 17px color-mix(in srgb,var(--sv7-accent) 9%,transparent),inset 0 1px rgba(255,255,255,.07)!important;overflow:visible!important}
+#view-ecosystem .ecosystem-icon:after{content:"";position:absolute;inset:-5px;border:1px solid color-mix(in srgb,var(--sv7-accent) 13%,transparent);border-radius:inherit;pointer-events:none}
+#view-ecosystem .ecosystem-card:nth-child(1) .ecosystem-icon{--sv7-accent:var(--sv7-mint)}
+#view-ecosystem .ecosystem-card:nth-child(2) .ecosystem-icon{--sv7-accent:var(--sv7-violet)}
+#view-ecosystem .ecosystem-card:nth-child(3) .ecosystem-icon{--sv7-accent:var(--sv7-blue)}
+#ecosystem-track-market-2 .ecosystem-card:nth-child(1) .ecosystem-icon{--sv7-accent:var(--sv7-coral)}
+#ecosystem-track-market-2 .ecosystem-card:nth-child(2) .ecosystem-icon{--sv7-accent:var(--sv7-pink)}
+#ecosystem-track-market-2 .ecosystem-card:nth-child(3) .ecosystem-icon{--sv7-accent:var(--sv7-green)}
+#ecosystem-track-market-0 .ecosystem-card:nth-child(1) .ecosystem-icon{--sv7-accent:var(--sv7-amber)}
+#ecosystem-track-market-0 .ecosystem-card:nth-child(2) .ecosystem-icon{--sv7-accent:var(--sv7-sky)}
+#ecosystem-track-market-0 .ecosystem-card:nth-child(3) .ecosystem-icon{--sv7-accent:var(--sv7-lilac)}
+#view-ecosystem .ecosystem-icon svg{filter:drop-shadow(0 0 4px color-mix(in srgb,var(--sv7-accent) 18%,transparent))}
+/* The hamburger / X controls gain one calm glass bubble without changing their hit-area or operation. */
+#rail-toggle,#rail-drawer-close{border:1px solid rgba(255,255,255,.13)!important;background:radial-gradient(circle at 34% 24%,rgba(255,255,255,.095),rgba(255,255,255,.025) 64%),rgba(18,21,23,.82)!important;box-shadow:inset 0 1px rgba(255,255,255,.09),0 0 0 3px rgba(255,60,0,.035),0 0 17px rgba(255,60,0,.09)!important}
+#rail-toggle:hover,#rail-drawer-close:hover{border-color:rgba(255,111,79,.4)!important;background-color:rgba(255,60,0,.09)!important}
+#rail-toggle:focus-visible,#rail-drawer-close:focus-visible{outline:2px solid #ff957d!important;outline-offset:3px!important}
+/* Halo only the Sapien fallback initial when no business artwork is present; uploaded business logos remain untouched. */
+@supports selector(:has(*)){.profile-top-avatar:has(#top-profile-avatar[hidden]),.workspace-logo:has(#drawer-business-logo[hidden]),.profile-business-logo:has(#desktop-business-logo[hidden]){border:1px solid rgba(255,140,110,.22)!important;box-shadow:0 0 0 3px rgba(255,60,0,.045),0 0 14px rgba(255,60,0,.09)!important}}
+/* Quiet eye + connected-node motifs, independent from controls and kept behind content. */
+.main{background-image:url('../brand/eye-motif.svg'),url('../brand/network-motif.svg');background-repeat:no-repeat,no-repeat;background-size:270px 145px,320px 240px;background-position:right 5.5rem top 10rem,left 1.2rem bottom 4rem;background-attachment:fixed,fixed}
+@media(max-width:720px){.sapien-brand-masthead{min-height:48px;padding:7px 12px 9px;margin-bottom:1px}.sapien-brand-masthead img{width:128px;height:36px}.main{background-size:180px 97px,210px 158px;background-position:right 1rem top 9rem,left .3rem bottom 5rem}}
+@media(prefers-reduced-motion:reduce){#rail-toggle,#rail-drawer-close{transition:none!important}}
