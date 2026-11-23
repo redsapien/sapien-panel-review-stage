@@ -15,7 +15,7 @@
     "service_pictogram_asset": "22x22px V6 artwork",
     "halo": "thin color-matched ring outside artwork, non-layout pseudo-elements; subtle hover/focus effect"
   },
-  "identity": "Wordmark reduced ~30%, same nav position, subtle translucent backing, S orange plus lowercase apien. Soft network/node background behind catalog, no flow or hit-test footprint. Circular halos on existing navigation/back/close controls.",
+  "identity": "V28: Sapien same header position and reduced ~30%; icon strokes with halo; hamburger and service glyph +20% inside original boxes; red menu/back/close/arrow rings; subtle neural mesh behind catalog; tech nav pictograms and Una IA label; browser tab now has explicit SVG favicon.",
   "pwa": "separate manifest, icons, and stage-scoped static cache; no production worker or data",
   "interactive_local_demo": [
     "navigation between sections",
@@ -35,23 +35,22 @@
     "request transmission",
     "account/profile save",
     "phone entry, uploads and attachments",
+    "live AI/API calls, chat persistence, microphone",
     "push notifications and integrations",
     "external links",
-    "“Próximamente” services remain unavailable",
-    "live AI/API calls, chat persistence, microphone, attachments in AI prototype"
+    "“Próximamente” services remain unavailable"
   ],
   "qa": {
-    "browser_desktop": "V23 visual screenshot reviewed at 1366px; service detail modal, local request modal, close/cancel/finish and account menu tested. Final browser console had no errors.",
-    "browser_responsive": "V26 confirms category title above dock at 320/360/390. V27 composer placement needs final browser screenshot verification.",
-    "request_flow": "Pedir ahora opens local modal. Close and Listo work. Final toast confirmed no request is sent/saved. Phone/uploads remain disabled.",
-    "hover_and_reduced_motion": "CSS hover/focus effects and reduced-motion override in place; no physical device hover/motion QA.",
-    "pwa_install_on_device": "not tested on a physical phone or desktop install",
-    "physical_mobile": "not tested on a real device",
-    "real_auth_upload_request_or_backend": "not connected in review stage",
-    "ai_preview": "V24 local chat preview implemented; browser interaction test pending",
-    "nav_labels": "Hablemos renamed Una IA; icons replaced in sidebar and bottom dock",
-    "hamburger": "SVG 23px -> 27.6px; same control box",
-    "card_icons": "SVG 22px -> 26.4px; same 32px box"
+    "browser_desktop": "V27: service detail modal opens; detail X has 44×44 circular red ring; local request flow had previously been verified; user menu opened; no visible network/action.",
+    "browser_responsive": "V27 QA verified in browser at 320/360/390 CSS px: first full-width service card remains readable; Marketing y automatización heading and top of its cards are above the bottom dock, with no overlap.",
+    "ai_mobile": "V27 QA at 320px: Una IA header, input, prompts and submit are visible above the dock; prompt shows orbiting processing states then explicitly says no real AI processed it.",
+    "request_flow": "V21/V27 staging: details modal, request preview, close and Listo function; no data transmission/storage.",
+    "hamburger": "SVG 20% larger and original control hit-area retained; mobile layout seen at 320px.",
+    "back_and_close": "same 44×44 px circle geometry/ring for visible detail X and back/close controls, source CSS checked.",
+    "physical_mobile": "not tested on a real handset",
+    "pwa_install_on_device": "not installed on a physical device",
+    "production": "not touched",
+    "console": "V27 console showed automatic favicon 404; V28 assigns one local favicon and removes duplicate. No other failed resources found in local request audit; final console recheck after deployment."
   },
   "pwa_assets": {
     "mobile": "opaque red-S halo PNGs plus maskable variant",
@@ -66,10 +65,11 @@
   },
   "layout": {
     "desktop": "Only pre-first shelf whitespace tuned; card markup, card grid and card text remain sourced from production stylesheet/HTML.",
-    "mobile_first_fold": "V26 reduces the excess section gap on mobile only; title/card width and content are unchanged.",
-    "ai_mobile": "V27 fits the chat panel above the mobile dock; processing and conversation can scroll inside their designated space."
+    "mobile_first_fold": "At 320/360/390 CSS-pixel emulation the first service card remains full-width per source carousel and the Marketing y automatización heading/top of the next card are visible above the bottom dock.",
+    "ai_mobile": "V27 fits the chat panel above the mobile dock; processing and conversation can scroll inside their designated space.",
+    "global_copy": "Keeps all service card copy and prices as production, except the requested welcome phrase; shortened redundant empty/info labels and compacted whitespace."
   },
-  "version": "V27",
+  "version": "V28",
   "changes": [
     "Unified the circle, size, red halo and hover treatment for back and close buttons.",
     "Hamburger glyph +20% while original hit target and layout remain.",
