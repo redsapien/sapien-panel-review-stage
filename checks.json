@@ -50,7 +50,7 @@
     "physical_mobile": "not tested on a real handset",
     "pwa_install_on_device": "not installed on a physical device",
     "production": "not touched",
-    "console": "V27 console showed automatic favicon 404; V28 assigns one local favicon and removes duplicate. No other failed resources found in local request audit; final console recheck after deployment.",
+    "console": "Initial V33 SW cache list referenced nonexistent stage-preview-v33.js; corrected to the actual stage-preview-v32.js. Recheck pending.",
     "price_layout": "V32 screenshot checked: $50.000 COP and Pago contra entrega are separated on one row, CTA is on the row below, no overlap.",
     "modal_note": "V32 detail modal reviewed; removed IA y analítica · por desplegar row is absent.",
     "background": "V32 desktop screenshot: network mesh is nearly imperceptible behind catalog; no content obstruction.",
