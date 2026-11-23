@@ -32,7 +32,12 @@
     "V49 addresses user screenshots: price/payment row positioned naturally closer to bottom of web card; CTA is larger, lower, white-on-coral red. Modal 24-hour and pay-on-delivery blocks use a restrained translucent black/coral treatment rather than green/blue."
   ],
   "qa": {
-    "source": "Static checks pending; screenshot comparison at mobile widths to be run after publishing."
+    "desktop": "Fresh V49 desktop review completed. The web card price/meta row is lowered toward the card bottom; the red CTA is visibly larger and aligned beside it. Modal blocks retain wording and have translucent dark/black-red treatment.",
+    "responsive": "QA view with 320×760 modal open plus 390×760 and 360×760 cards; no clipping/overlap observed. At 320px price line and button fit on one row; modal payment rows fit and remain legible with normal modal scroll.",
+    "modal": "“Lista en 24 horas” and “Pague contra entrega, al verla online” preserved. Background is subdued translucent charcoal/coral, no mint/blue accent. Request remains demo only.",
+    "console": "Fresh V49 page and modal showed no console errors.",
+    "production": "Production remains untouched; only isolated GitHub Pages test updated.",
+    "physical_device": "CSS iframe emulation only; not physically tested on a phone or virtual keyboard."
   },
   "disabled": [
     "Real AI/provider API",
