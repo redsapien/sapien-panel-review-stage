@@ -12,7 +12,7 @@
     "service_pictograms": "Nine original V6 concepts replace the previous icons",
     "service_icon_frame": "none; original 32×32 container and 22×22 pictogram dimensions preserved, no layout changes"
   },
-  "identity": "Sapien wordmark reduced about 30%, centered in the same nav slot with very subtle translucent backing; service icons use the last V6 artwork without a surrounding circle; control/close buttons retain original size and positions with a red halo.",
+  "identity": "Wordmark reduced about 30% from the previous version and centered in its existing nav slot, with subtle translucent backing; service icon artwork has no surrounding frame and preserves the production 32×32 container and 22×22 glyph; red halo on existing controls without resizing or repositioning.",
   "pwa": "separate manifest, icons, and stage-scoped static cache; no production worker or data",
   "interactive_local_demo": [
     "section navigation",
@@ -31,8 +31,8 @@
     "profile save remains disabled; brand-name typing only previews the greeting for this browser tab"
   ],
   "qa": {
-    "browser_desktop": "not yet verified on V10 deploy",
-    "browser_responsive": "not yet verified on V10 deploy",
+    "browser_desktop": "V10 opened; account profile preview field updated the heading locally, service card details modal opened/closed; V11 visual check pending.",
+    "browser_responsive": "V8h tested in 320/360/390 CSS pixel iframes; V11 final check pending.",
     "carousel_touch_swipe": "not tested",
     "pwa_install_on_device": "not tested",
     "mobile_physical": "not tested",
@@ -49,16 +49,17 @@
     "persistence": "same browser tab only; no server or account write",
     "other_copy": "existing slogan and all service cards remain unchanged",
     "phrases": [
-      "¿Qué creamos para {marca} hoy?",
       "¿Qué hacemos hoy por {marca}?",
-      "¿Qué mejoramos en {marca} hoy?",
-      "¿Cómo impulsamos a {marca} hoy?",
-      "¿Qué construimos juntos en {marca}?",
-      "¿Qué solución creamos para {marca}?",
-      "¿Qué idea ponemos en {marca}?",
-      "¿Qué oportunidad abrimos para {marca}?",
-      "¿Qué mejoramos primero en {marca}?"
+      "¿Qué creamos hoy con {marca}?",
+      "¿Qué impulsamos hoy en {marca}?",
+      "¿Qué mejoramos hoy para {marca}?",
+      "¿Qué construimos hoy con {marca}?",
+      "¿Qué ideas damos a {marca}?",
+      "¿Qué soluciones hacemos para {marca}?",
+      "¿Qué oportunidad abrimos a {marca}?",
+      "¿Cómo avanzamos hoy con {marca}?"
     ],
-    "local_account_preview": "The existing profile field updates the nine short questions; business name stays in this browser tab, no backend save."
+    "local_account_preview": "The existing profile field updates the nine short questions; business name stays in this browser tab, no backend save.",
+    "fixed_words_before_brand": 4
   }
 }
