@@ -21,3 +21,5 @@ La prueba abre de forma pública para cualquiera que tenga la dirección; no es 
 - V21: ajusta a 2 px el margen inferior y el padding bajo el primer encabezado móvil; sube la primera hilera y el siguiente encabezado sin tocar la geometría de las tarjetas.
 
 - La tarjeta abre el detalle y «Pedir ahora» abre un formulario local de demostración. Cerrar/cancelar funciona; «Listo» solo confirma que no se envió nada. No se capturan datos, no se guarda y no se envía.
+
+- V23 dibuja la trama neuronal detrás del catálogo, no sobre él; la capa no ocupa espacio, no bloquea toques y reduce su intensidad en móvil.

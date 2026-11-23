@@ -33,8 +33,8 @@
     "request submission and profile save; request demo captures no contact and sends no data"
   ],
   "qa": {
-    "browser_desktop": "V18 card copy and responsive spacing checked; stage controls require V19 script recheck",
-    "browser_responsive": "V17 QA screenshot: 390px title visible; 320/360 still overlapped bottom dock. V18 fixes source spacing; final screenshot verification pending.",
+    "browser_desktop": "V22 desktop view visually inspected; V23 watermark surface placement needs visual check.",
+    "browser_responsive": "V18 spacing checked at 320/360/390; V23 background placement must stay inside current section without overlap.",
     "carousel_touch_swipe": "not tested",
     "pwa_install_on_device": "not tested",
     "mobile_physical": "not tested",
