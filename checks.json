@@ -42,7 +42,7 @@
   ],
   "qa": {
     "browser_desktop": "V27: service detail modal opens; detail X has 44×44 circular red ring; local request flow had previously been verified; user menu opened; no visible network/action.",
-    "browser_responsive": "V27 QA verified in browser at 320/360/390 CSS px: first full-width service card remains readable; Marketing y automatización heading and top of its cards are above the bottom dock, with no overlap.",
+    "browser_responsive": "V27/V28 screenshot verified at 320/360/390 CSS px: first service card and Marketing y automatización heading visible above bottom dock; no card width change. V29 only hides inner chat scrollbars.",
     "ai_mobile": "V27 QA at 320px: Una IA header, input, prompts and submit are visible above the dock; prompt shows orbiting processing states then explicitly says no real AI processed it.",
     "request_flow": "V21/V27 staging: details modal, request preview, close and Listo function; no data transmission/storage.",
     "hamburger": "SVG 20% larger and original control hit-area retained; mobile layout seen at 320px.",
@@ -69,7 +69,7 @@
     "ai_mobile": "V27 fits the chat panel above the mobile dock; processing and conversation can scroll inside their designated space.",
     "global_copy": "Keeps all service card copy and prices as production, except the requested welcome phrase; shortened redundant empty/info labels and compacted whitespace."
   },
-  "version": "V28",
+  "version": "V29",
   "changes": [
     "Unified the circle, size, red halo and hover treatment for back and close buttons.",
     "Hamburger glyph +20% while original hit target and layout remain.",
@@ -78,6 +78,7 @@
     "Tech-styled navigation icons; Hablemos renamed Una IA.",
     "Una IA section is an explicitly local non-connected interactive demo with orbiting processing indicator; it does not store, send or claim AI work.",
     "Info y más empty-state copy shortened and headings made easier to scan.",
-    "First-screen whitespace/card padding reduced without changing widths or wording; verify viewport fit."
+    "First-screen whitespace/card padding reduced without changing widths or wording; verify viewport fit.",
+    "Hide only the decorative scrollbar on the scrollable AI message pane; native touch and wheel scroll remain enabled."
   ]
 }
