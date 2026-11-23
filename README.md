@@ -1,4 +1,4 @@
-# Sapien · revisión aislada V37
+# Sapien · revisión aislada V38
 
 Solo staging de prueba. Producción no se tocó.
 
@@ -11,3 +11,5 @@ Solo staging de prueba. Producción no se tocó.
 - Los nombres de producto y precios fuera de esta tarjeta, contenido de otros sliders, identidades y diseño de marca se conservan.
 
 Emulación de pantalla no sustituye pruebas con teclado virtual en un teléfono físico.
+
+V38: la acción de detalles queda en la misma fila, a la derecha del precio, incluso en 320 px. La vista del asistente elimina el título repetido para ganar área de conversación.

@@ -1,5 +1,5 @@
 {
-  "version": "V37",
+  "version": "V38",
   "scope": "Isolated GitHub Pages preview only; production unchanged.",
   "changes": [
     "Card shows $50.000 COP and “Pago único” at left; “Ver qué incluye” button is larger at right. “Pago contra entrega” is only in modal.",
@@ -7,11 +7,11 @@
     "Sapien wordmark artwork preserved; apien moved 4 SVG units toward S.",
     "Navigation is labeled “Asistente” for nontechnical users. Main assistant copy is short and topic prompts cover selling/web/improvements.",
     "Chat area expanded on PC and mobile; visualViewport-aware keyboard mode pins composer above keyboard and hides mobile dock while typing.",
-    "Info y más receives restrained contrast and hover refinements."
+    "Info y más receives restrained contrast and hover refinements.",
+    "V38 corrects cascade priority so price/Pago único and the larger “Ver qué incluye” action remain left/right in one row at 320px; keeps single arrow; removes redundant assistant heading to expand workspace."
   ],
   "qa": {
-    "source": "DOM/source checks below; live browser checks pending.",
-    "device": "No physical device test."
+    "source": "Static DOM checks passed; live browser verification of actual position and keyboard behavior pending."
   },
   "disabled": [
     "Real AI/provider API",
