@@ -11,3 +11,5 @@ Staging visual/interactiva local; **no altera producción**.
 Producción conserva por ahora otro párrafo de tarjeta: “Su sitio web para presentar su negocio y facilitar el contacto.” El velo de navegación productivo se observó, pero no se tocó. Backend, notificaciones reales, teclado de hardware y despliegue productivo quedan fuera de esta revisión aislada.
 
 V51 final specificity update ensures distinct but restrained capability-icon colors remain visible in dark and light themes.
+
+V52 gives the app a dynamically named agent in the header, response labels and navigation for the local test business name; the nav keeps the concise label “Mi agente”. The responsive QA page now loads one exact V52 cascade and fresh iframes at 320/360/390 px.
