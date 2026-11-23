@@ -13,3 +13,5 @@ Producción conserva por ahora otro párrafo de tarjeta: “Su sitio web para pr
 V51 final specificity update ensures distinct but restrained capability-icon colors remain visible in dark and light themes.
 
 V52 gives the app a dynamically named agent in the header, response labels and navigation for the local test business name; the nav keeps the concise label “Mi agente”. The responsive QA page now loads one exact V52 cascade and fresh iframes at 320/360/390 px.
+
+V53 uses “Mi agente” as neutral tab text; inside the assistant, the name is customized to “Agente de [negocio]”.
