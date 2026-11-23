@@ -1,4 +1,4 @@
-# Sapien · espacio aislado de revisión V12
+# Sapien · espacio aislado de revisión V13
 
 Vista pública de prueba, separada de `panel.redsapien.co`. Parte del HTML y la hoja CSS públicos del panel; no carga scripts de producción, Supabase, cuentas ni datos reales. No tiene acceso de escritura a producción.
 
@@ -9,3 +9,7 @@ Vista pública de prueba, separada de `panel.redsapien.co`. Parte del HTML y la 
 - Los iconos de instalación y manifiestos separados para móvil/escritorio pertenecen a esta ruta de pruebas. Se revisó la vista en navegador a 320, 360 y 390 px, y se verificaron sus 37 recursos; la instalación y los gestos táctiles en un dispositivo físico todavía no están comprobados.
 
 La prueba abre de forma pública para cualquiera que tenga la dirección; no es una cuenta ni una copia operativa. La vista puede revisarse en escritorio, móvil emulado y en `/qa-mobile-v10.html`. No se modificó ni publicó Sapien en producción.
+
+- En V13, cada pictograma tiene un aro fino del color propio; se ilumina suavemente al pasar el cursor o recibir foco, sin cambiar la caja 32 × 32 ni el glifo 22 × 22. Flechas, volver, X, menú y colapsar comparten halo rojo con transición; la animación respeta movimiento reducido.
+- Se añadió una trama fija de red/neuronas muy tenue en el fondo. No ocupa espacio, no recibe clics y no anima constantemente.
+- Se redujo solo el margen entre bienvenida, frase y primera sección para acercar la fila de tarjetas y su siguiente encabezado al primer pliegue.

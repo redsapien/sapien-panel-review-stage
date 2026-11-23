@@ -12,7 +12,7 @@
     "service_pictograms": "Nine original V6 concepts replace the previous icons",
     "service_icon_frame": "none; original 32×32 container and 22×22 pictogram dimensions preserved, no layout changes"
   },
-  "identity": "Wordmark reduced about 30% from the previous version and centered in its existing nav slot, with subtle translucent backing; service icon artwork has no surrounding frame and preserves the production 32×32 container and 22×22 glyph; red halo on existing controls without resizing or repositioning.",
+  "identity": "V13: latest V6 service pictograms now have fine per-icon color halos at fixed production dimensions; on hover/focus the rings brighten smoothly. Existing back, X, menu and arrow controls share subtle red circular glass halos. A faint static neural/workflow SVG sits only as background, with no layout or hit-test footprint.",
   "pwa": "separate manifest, icons, and stage-scoped static cache; no production worker or data",
   "interactive_local_demo": [
     "section navigation",
@@ -31,14 +31,15 @@
     "profile save remains disabled; brand-name typing only previews the greeting for this browser tab"
   ],
   "qa": {
-    "browser_desktop": "V12: loaded at 1366px, inspected brand, service icon frames, account menu, profile-name preview and service detail modal; modal opened and closed; no browser console errors.",
-    "browser_responsive": "V12 rendered in 320, 360 and 390 CSS-pixel browser iframes; header brand stays in top nav, menus and business mark remain at their top positions, and original card copy/prices appear unchanged.",
+    "browser_desktop": "V12 was checked; V13 needs final browser pass",
+    "browser_responsive": "V12 frames available at 320, 360, 390px; V13 needs final browser pass",
     "carousel_touch_swipe": "not tested",
     "pwa_install_on_device": "not tested",
     "mobile_physical": "not tested",
     "real_auth_upload_request_or_backend": "disabled for public isolated review",
     "resources": "37 HTML/CSS/font/icon/manifest/script resources returned HTTP 200.",
-    "browser_light_theme": "menu theme toggle confirmed in previous isolated V8 screenshot, not rechecked for V12"
+    "browser_light_theme": "menu theme toggle confirmed in previous isolated V8 screenshot, not rechecked for V12",
+    "card_geometry": "source CSS and markup unchanged; only pre-card vertical margins change"
   },
   "pwa_assets": {
     "mobile": "opaque red-S halo PNGs plus maskable variant",
@@ -63,5 +64,9 @@
     ],
     "local_account_preview": "The existing profile field updates the nine short questions; business name stays in this browser tab, no backend save.",
     "fixed_words_before_brand": 4
+  },
+  "layout": {
+    "card_width_height_padding": "unchanged relative to production stylesheet",
+    "first_view": "reduced only hero and welcome statement margins above first card shelf to improve first-fold visibility; no text size/card geometry changes"
   }
 }
