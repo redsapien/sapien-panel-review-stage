@@ -17,3 +17,5 @@ Se inspeccionaron escritorio y emulación responsive a 320, 360 y 390 CSS px. Se
 **Límites:** la consola del navegador mostró un error genérico 404 sin URL identificable; las rutas estáticas conocidas sí respondieron 200, pero no afirmamos consola sin errores. No se probó con teléfono/teclado real ni instalación PWA.
 
 Antonella IA sigue siendo una demo local de respuestas por reglas: no consulta Gmail, el negocio, monitorización real ni un modelo conectado; no guarda conversaciones ni realiza acciones. Integraciones/API reales necesitan autorización, backend seguro y QA independiente.
+
+V48 corrects the final modal selector to target its actual DOM placement outside .app, unifying assurances to coral and hiding the visible scrollbar without disabling swipe.
