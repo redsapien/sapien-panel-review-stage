@@ -1,5 +1,5 @@
 {
-  "version": "V43",
+  "version": "V44",
   "scope": "Isolated GitHub Pages preview only; production unchanged.",
   "changes": [
     "Card shows $50.000 COP and “Pago único” at left; “Ver qué incluye” button is larger at right. “Pago contra entrega” is only in modal.",
@@ -18,18 +18,16 @@
     "Maintains in-panel conversation scroll, focusing the composer without moving the outer page.",
     "Info & more received coherent restrained section/card polish.",
     "Connector/agent view names the future assistant Antonella IA and keeps its not-yet-active status explicit.",
-    "Restored all V41 layout rules before V42 identity overrides; explicitly aligns web offer price and CTA side-by-side; recolors capability glyphs and raises icon-ring specificity; removed chat focus scrollIntoView to keep viewport stable."
+    "Restored all V41 layout rules before V42 identity overrides; explicitly aligns web offer price and CTA side-by-side; recolors capability glyphs and raises icon-ring specificity; removed chat focus scrollIntoView to keep viewport stable.",
+    "Promise shortened to “Creamos todo y lo dejamos en automático.”; typography raised slightly and surrounding box decorations removed.",
+    "All nine card paragraphs shortened into plain-language teasers (~35–60% shorter), retaining status and useful context.",
+    "More consistent whitespace between family titles/sliders and cards.",
+    "Web card amount/COP/pago único and its red conversion CTA given stronger but tidy contrast.",
+    "Web modal visual hierarchy refined while retaining payment phrase and demo restrictions.",
+    "Antonella demo activity badge and scripted processing spinner use restrained red/coral accents; no claim of actual AI reasoning or business monitoring."
   ],
   "qa": {
-    "desktop_browser": "V43 loaded fresh over HTTPS. Click-tested main navigation, assistant, two consecutive local prompts and web service details. Last answer remains in conversation, the page does not jump on input focus. No browser console error messages during tested flow.",
-    "mobile_emulation": "QA iframe layouts viewed at 320, 360 and 390 CSS px × 760. Card price/Pago único and details CTA render in one row; section headings/cards have consistent breathing room; Info y más, notification bell and empty state fit; assistant entry, sample prompt, reply and composer visible at 320. This is browser CSS-width emulation, not physical device.",
-    "assistant": "Display/navigation name Antonella IA; user prompt submits with Enter; local reply appears in chat and retains earlier messages, no outer page scrollIntoView. Response explicitly says no real AI/data was consulted.",
-    "service_modal": "Opened from CTA in 390px emulation; modal payment phrase appears in modal and not on the card. Modal links/action are disabled in test stage.",
-    "icons": "Nine V7 SVGs parse; default strokes #E9E8E6; a single quiet accent per service family. Page uses existing S wordmark; the original S path was preserved from previous version.",
-    "assets": "29 local page references collected from live HTML, all returned HTTP 200; the new V7 icon family and V43 CSS/JS assets also return HTTP 200.",
-    "console": "No browser console error messages in V43 navigation, chat, modal or Info & más checks.",
-    "physical_keyboard": "Not tested with a physical phone or its native soft keyboard. VisualViewport keyboard behavior is coded, but needs device QA.",
-    "production": "Not changed. Production migration still requires Cristian’s explicit approval and separate release/real integration QA."
+    "source": "V44 static DOM/text checks to run before publishing. Browser desktop and responsive QA pending."
   },
   "disabled": [
     "Real AI/provider API",
@@ -41,5 +39,6 @@
   ],
   "note": "The local chat still gives rule-based demo recommendations only; it does not monitor live business state or activate actions.",
   "assistant_name": "Antonella IA. Sapien remains the panel/product brand.",
-  "assistant_capability": "Antonella is still an explicitly local rule-based design demo; not connected to account data, monitoring, a model provider, tools/actions, saved history or API credentials."
+  "assistant_capability": "Antonella is still an explicitly local rule-based design demo; not connected to account data, monitoring, a model provider, tools/actions, saved history or API credentials.",
+  "production_review": "Observed deployed mobile nav assets: panel-nav-glass.js sets a translucent gradient; panel-top-glass-veil.js uses a vertical mask fade. Neither production asset or deployment was modified."
 }

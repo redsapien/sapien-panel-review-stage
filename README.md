@@ -1,15 +1,12 @@
-# Sapien · revisión aislada V43
+# Sapien · revisión aislada V44
 
-Staging público de evaluación; producción no se modificó.
+Staging de prueba. **Producción no se modificó.**
 
-- **Sapien** es el panel/producto. **Antonella IA** es el nombre del asistente. Interfaz y sugerencias usan lenguaje sencillo para emprendedores, profesionales y dueños de negocio.
-- Nueve iconos de servicio comparten línea limpia, círculos translúcidos de halo bajo y acentos apagados por familia; los iconos de navegación/settings usan el mismo lenguaje visual. La S original del wordmark se preserva.
-- Categorías y tarjetas tienen separación uniforme, manteniendo textos, orden y geometría de servicio. La tarjeta web muestra $50.000 COP + “Pago único” a la izquierda y “Ver qué incluye” a la derecha; “Pague contra entrega, al verla online” está solamente en el modal.
-- “Info y más” conserva sus secciones pero con ritmo, bordes y campana más limpios.
-- El campo se enfoca sin desplazar la página; las nuevas respuestas aparecen en el historial interno y conservan turnos previos. El listener de `visualViewport` posiciona el composer sobre el teclado virtual en móvil.
+- Lema: “Creamos todo y lo dejamos en automático.” Sin promesa de ventas. Estilo un poco mayor, sin caja decorativa.
+- Los nueve textos de tarjeta se hicieron más breves y conversacionales (reducción aproximada de 35–60% por texto), conservando estados/qualificadores necesarios en sus marcas de preparación.
+- Se amplió el espacio entre categoría, slider y tarjetas; bordes y sombras se hicieron menos ruidosos.
+- En Su web + IA, precio, COP y “Pago único” destacan y el CTA rojo ocupa la columna derecha. El modal conserva “Pague contra entrega, al verla online” y el precio único. Su acción sigue siendo una demostración que no envía solicitud.
+- Antonella mantiene etiqueta clara “Demo · sin conexión”; su indicador/animación se afinó en coral Sapien. Estados de espera son animación de demostración, no razonamiento o actividad de un modelo real. Conversación local mantiene los turnos sin desplazar la página.
+- En producción se revisaron las referencias al velo móvil: la navegación inferior tiene fondo translúcido y la cabecera usa máscara vertical de desvanecimiento. Esos recursos de producción no se alteraron.
 
-**QA hecho:** navegador en escritorio; flujo de asistente con dos consultas; modal; Info y más; anchos emulados de 320, 360 y 390 CSS px. Sin errores de consola en los flujos probados. 29 referencias locales del HTML y las nuevas imágenes/CSS/JS respondieron HTTP 200.
-
-**QA pendiente:** teléfono físico, teclado virtual nativo, instalación/actualización PWA y prueba integral de producción.
-
-**Límite funcional:** Antonella aún es una demo local de reglas; no usa datos del negocio, modelo de IA o API, no monitorea actividad, no realiza acciones y no guarda chats. La conexión real necesitará autorización, arquitectura segura, permisos, integración y pruebas antes de producción.
+QA en navegador aún pendiente para esta V44; 320/360/390 emulación y prueba desktop deben repetirse tras el deploy. Teclado nativo requiere dispositivo físico. Antonella no accede al Gmail o al contexto de producción: registro, consulta de correo, datos, monitorización, API, herramientas, memoria y acciones reales no están conectados en esta prueba.
