@@ -57,3 +57,9 @@ html[data-theme="light"] body .app>.main>.content #view-ecosystem .ecosystem-tra
 /* The only stage notice is an ephemeral toast when a disabled operation is attempted; no top strip or reserved space. */
 .stage-demo-note{position:fixed;z-index:9999;left:50%;bottom:max(16px,env(safe-area-inset-bottom));transform:translateX(-50%);width:max-content;max-width:min(90vw,480px);box-sizing:border-box;padding:10px 14px;border:1px solid rgba(255,95,58,.34);border-radius:14px;background:rgba(22,24,27,.96);box-shadow:0 8px 28px rgba(0,0,0,.34);color:#f5f6f7;font:500 13px/1.35 system-ui,sans-serif;text-align:center;pointer-events:none}
 .stage-demo-note[hidden]{display:none!important}
+/* Mobile header remains fixed, like production: avoid a second 78px row in page flow. */
+@media(max-width:720px){
+ html body .app>.main>.topbar{position:fixed!important;inset:0 0 auto 0!important;top:0!important;z-index:500!important}
+ html body .app>.main>.topbar button#rail-toggle{position:fixed!important;inset:auto!important;top:calc(env(safe-area-inset-top) + 12px)!important;left:max(12px,env(safe-area-inset-left))!important;right:auto!important;display:grid!important;place-items:center!important;width:44px!important;min-width:44px!important;max-width:44px!important;height:44px!important;min-height:44px!important;max-height:44px!important;margin:0!important;padding:0!important;border:1px solid rgba(255,91,54,.36)!important;border-radius:50%!important;background:radial-gradient(circle at 36% 28%,rgba(255,105,70,.15),rgba(20,18,18,.92) 66%)!important;box-shadow:0 0 0 2px rgba(255,60,0,.10),0 0 18px rgba(255,60,0,.26),inset 0 1px rgba(255,255,255,.12)!important;transform:none!important}
+ html body .app>.main>.topbar button#rail-toggle svg{display:block!important;width:23px!important;min-width:23px!important;max-width:23px!important;height:23px!important;min-height:23px!important;max-height:23px!important;transform:none!important}
+}

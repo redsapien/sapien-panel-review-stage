@@ -1,4 +1,4 @@
-const CACHE='sapien-review-v8d-static';
+const CACHE='sapien-review-v8e-static';
 const ROOT=new URL(self.registration.scope);
 const CORE=['./','./manifest.webmanifest','./manifest-mobile.webmanifest','./manifest-desktop.webmanifest','./stage-preview.js','./sw.js','./assets/css/panel.css','./assets/css/sapien-v8-identity.css','./assets/brand/sapien-wordmark-v8.svg','./assets/brand/sapien-wordmark-v8-light.svg','./assets/brand/v7-icon-concepts/sapien-favicon.svg','./assets/brand/sapien-icon.svg','./assets/fonts/space-grotesk-400.ttf','./assets/fonts/space-grotesk-700.ttf','./icon-192.png','./icon-512.png','./apple-touch-icon.png','./icon-512-maskable.png','./icon-desktop-192.png','./icon-desktop-512.png'];
 self.addEventListener('install',event=>{event.waitUntil((async()=>{const c=await caches.open(CACHE);await Promise.allSettled(CORE.map(p=>c.add(new URL(p,ROOT).href)));await self.skipWaiting()})())});
