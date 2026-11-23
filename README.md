@@ -1,14 +1,14 @@
-# Sapien · revisión aislada V23
+# Sapien · revisión aislada V24
 
-Vista pública de revisión para `panel.redsapien.co`; no es una cuenta operativa ni tiene conexión con producción. El contenido y la hoja visual parten del panel, pero autenticación, Supabase y escrituras externas están retirados.
+Esta es una propuesta pública de staging independiente; producción `panel.redsapien.co` no se modificó.
 
-- Sapien se muestra en la misma posición superior y alrededor de 30% más pequeño, con fondo translúcido muy sutil.
-- Se reemplazaron los nueve pictogramas por la última propuesta V6. Conservan la caja productiva de 32 × 32 px y el dibujo de 22 × 22 px. Un aro fino toma un acento propio por icono y aumenta suavemente al pasar cursor o recibir foco.
-- Menú, engranaje, volver, X de los modales y flechas comparten halos circulares rojos. No se añadieron márgenes ni superficies al tamaño de los controles.
-- La trama neuronal del fondo es decorativa, está detrás del catálogo, no bloquea toques ni añade altura de página.
-- Se redujo el espacio sobrante de bienvenida/encabezados en móvil; la etiqueta «Marketing y automatización» aparece sobre la navegación inferior a 320/360/390 px. La geometría, tipografía, textos y precios de las tarjetas se cotejaron contra el HTML actual.
-- Detalle del servicio, navegación, carruseles, menús y controles X se prueban en local. «Pedir ahora» abre una solicitud de demostración; «Listo» solo cierra y avisa que no se envió. No se capturan teléfonos, archivos ni datos; auth y guardado siguen apagados.
-- El nombre de negocio puede escribirse en el perfil para previsualizar nueve preguntas cortas; se conserva solo en la sesión de esa pestaña. El copy aprobado, incluido «Nosotr@s», se mantiene.
-- Los manifiestos e iconos para PWA se limitan a este espacio de prueba. No se verificó instalación en teléfono físico.
+- Menú hamburguesa 20% más grande, conservando el blanco de toque y posición. Los botones de volver y cerrar comparten círculo de 44 px, borde y halo rojo.
+- Pictogramas de servicio 20% más grandes (26,4 px dentro de su caja original de 32 px). Tarjetas mantienen sus textos y precios fuente.
+- Nuevo texto aprobado de bienvenida: «Creamos todo y lo dejamos en automático. Usted ve crecer su negocio y vender más.»
+- Iconos de navegación del sistema con trazos y halo tech. «Hablemos» cambia a «Una IA».
+- Una IA es un prototipo local: permite escribir o tocar sugerencias, ver animación/estados de procesamiento y una respuesta que aclara que el agente real aún no está conectado. No llama APIs, no persiste texto, no usa micrófono ni adjuntos y no envía contenido.
+- «Info y más» tiene estados vacíos más breves y bloques más fáciles de recorrer. Catálogo y copy de servicios permanecen fieles a la fuente.
+- Se recortó espacio vertical sobrante y una parte del padding de tarjetas para mostrar más del catálogo en el primer pliegue. No se estrechan las tarjetas.
+- Se revisaron las capturas que compartió Cristian y se usó la estructura clara del chat como referencia; no se copiaron logos ni marca de Zapia.
 
-Revisión en navegador: escritorio 1366 px y página de QA emulada 320/360/390 px. No equivale a QA de dispositivo real. La página es pública para quien tenga el enlace. No se modificó ni se publicó el panel productivo.
+Verificación navegador emulado no sustituye QA en teléfono físico, instalación PWA ni conexión real del agente.

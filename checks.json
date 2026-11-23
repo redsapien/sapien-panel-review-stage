@@ -27,7 +27,8 @@
     "account menu and account panes",
     "business-name preview stored in this tab session only",
     "theme control",
-    "install prompt or install instructions"
+    "install prompt or install instructions",
+    "Una IA prototype: prompt chips/text input, visual processing steps, explicit reply that no real AI was connected"
   ],
   "disabled": [
     "authentication and Supabase/backend",
@@ -36,7 +37,8 @@
     "phone entry, uploads and attachments",
     "push notifications and integrations",
     "external links",
-    "“Próximamente” services remain unavailable"
+    "“Próximamente” services remain unavailable",
+    "live AI/API calls, chat persistence, microphone, attachments in AI prototype"
   ],
   "qa": {
     "browser_desktop": "V23 visual screenshot reviewed at 1366px; service detail modal, local request modal, close/cancel/finish and account menu tested. Final browser console had no errors.",
@@ -45,7 +47,11 @@
     "hover_and_reduced_motion": "CSS hover/focus effects and reduced-motion override in place; no physical device hover/motion QA.",
     "pwa_install_on_device": "not tested on a physical phone or desktop install",
     "physical_mobile": "not tested on a real device",
-    "real_auth_upload_request_or_backend": "not connected in review stage"
+    "real_auth_upload_request_or_backend": "not connected in review stage",
+    "ai_preview": "V24 local chat preview implemented; browser interaction test pending",
+    "nav_labels": "Hablemos renamed Una IA; icons replaced in sidebar and bottom dock",
+    "hamburger": "SVG 23px -> 27.6px; same control box",
+    "card_icons": "SVG 22px -> 26.4px; same 32px box"
   },
   "pwa_assets": {
     "mobile": "opaque red-S halo PNGs plus maskable variant",
@@ -61,5 +67,16 @@
   "layout": {
     "desktop": "Only pre-first shelf whitespace tuned; card markup, card grid and card text remain sourced from production stylesheet/HTML.",
     "mobile_first_fold": "V18/V17 spacing overrides reclaim header margins so Marketing y automatización heading is visible above bottom navigation at 320/360/390px; no card width/height/padding/type changed."
-  }
+  },
+  "version": "V24",
+  "changes": [
+    "Unified the circle, size, red halo and hover treatment for back and close buttons.",
+    "Hamburger glyph +20% while original hit target and layout remain.",
+    "Service glyphs +20% inside unchanged 32px production icon box.",
+    "Updated promise to Creamos todo y lo dejamos en automático. Usted ve crecer su negocio y vender más.",
+    "Tech-styled navigation icons; Hablemos renamed Una IA.",
+    "Una IA section is an explicitly local non-connected interactive demo with orbiting processing indicator; it does not store, send or claim AI work.",
+    "Info y más empty-state copy shortened and headings made easier to scan.",
+    "First-screen whitespace/card padding reduced without changing widths or wording; verify viewport fit."
+  ]
 }
