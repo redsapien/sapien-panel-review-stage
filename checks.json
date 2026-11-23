@@ -19,7 +19,8 @@
     "carousel arrows",
     "service detail modal",
     "theme toggle",
-    "install guidance"
+    "install guidance",
+    "test-only controls enabled via fixed staging script; verified after syntax repair pending deployment"
   ],
   "disabled": [
     "authentication",
@@ -31,7 +32,7 @@
     "profile save remains disabled; brand-name typing only previews the greeting for this browser tab"
   ],
   "qa": {
-    "browser_desktop": "V14 screenshot confirms menu row is no longer oval; V15 background visibility final browser check pending.",
+    "browser_desktop": "V18 card copy and responsive spacing checked; stage controls require V19 script recheck",
     "browser_responsive": "V17 QA screenshot: 390px title visible; 320/360 still overlapped bottom dock. V18 fixes source spacing; final screenshot verification pending.",
     "carousel_touch_swipe": "not tested",
     "pwa_install_on_device": "not tested",
@@ -39,7 +40,8 @@
     "real_auth_upload_request_or_backend": "disabled for public isolated review",
     "resources": "37 HTML/CSS/font/icon/manifest/script resources returned HTTP 200.",
     "browser_light_theme": "menu theme toggle confirmed in previous isolated V8 screenshot, not rechecked for V12",
-    "card_geometry": "source CSS and markup unchanged; only pre-card vertical margins change"
+    "card_geometry": "source CSS and markup unchanged; only pre-card vertical margins change",
+    "script_syntax": "V18 had a malformed registration-call line; corrected in V19, verifying in browser"
   },
   "pwa_assets": {
     "mobile": "opaque red-S halo PNGs plus maskable variant",
