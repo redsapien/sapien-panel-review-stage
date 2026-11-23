@@ -1,5 +1,5 @@
 {
-  "status": "public isolated review stage",
+  "status": "public isolated visual review stage V23",
   "production_untouched": true,
   "production_backend_or_supabase_loaded": false,
   "external_calls_and_forms_blocked": true,
@@ -10,40 +10,42 @@
     "layout_overridden_by_identity_layer": false,
     "copy_prices_match_live_source": true,
     "service_pictograms": "Nine original V6 concepts replace the previous icons",
-    "service_icon_frame": "none; original 32×32 container and 22×22 pictogram dimensions preserved, no layout changes"
+    "service_icon_frame": "none; original 32×32 container and 22×22 pictogram dimensions preserved, no layout changes",
+    "service_pictogram_box": "32x32px as in current production CSS",
+    "service_pictogram_asset": "22x22px V6 artwork",
+    "halo": "thin color-matched ring outside artwork, non-layout pseudo-elements; subtle hover/focus effect"
   },
-  "identity": "V13: latest V6 service pictograms now have fine per-icon color halos at fixed production dimensions; on hover/focus the rings brighten smoothly. Existing back, X, menu and arrow controls share subtle red circular glass halos. A faint static neural/workflow SVG sits only as background, with no layout or hit-test footprint.",
+  "identity": "Wordmark reduced ~30%, same nav position, subtle translucent backing, S orange plus lowercase apien. Soft network/node background behind catalog, no flow or hit-test footprint. Circular halos on existing navigation/back/close controls.",
   "pwa": "separate manifest, icons, and stage-scoped static cache; no production worker or data",
   "interactive_local_demo": [
-    "section navigation",
-    "carousel arrows",
-    "service detail modal",
-    "theme toggle",
-    "install guidance",
-    "service detail modal opens/closes",
-    "Pedir ahora opens local-only request modal; close/cancel works and Listo only acknowledges that nothing was sent"
+    "navigation between sections",
+    "service carousel arrows",
+    "service details modal open/close",
+    "Pedir ahora opens local request preview",
+    "request close/cancel",
+    "Listo shows not-sent message and closes",
+    "account menu and account panes",
+    "business-name preview stored in this tab session only",
+    "theme control",
+    "install prompt or install instructions"
   ],
   "disabled": [
-    "authentication",
-    "uploads",
-    "push notifications",
+    "authentication and Supabase/backend",
+    "request transmission",
+    "account/profile save",
+    "phone entry, uploads and attachments",
+    "push notifications and integrations",
     "external links",
-    "business-name preview is session-only; account save remains disabled",
-    "profile save remains disabled; brand-name typing only previews the greeting for this browser tab",
-    "request submission and profile save; request demo captures no contact and sends no data"
+    "“Próximamente” services remain unavailable"
   ],
   "qa": {
-    "browser_desktop": "V22 desktop view visually inspected; V23 watermark surface placement needs visual check.",
-    "browser_responsive": "V18 spacing checked at 320/360/390; V23 background placement must stay inside current section without overlap.",
-    "carousel_touch_swipe": "not tested",
-    "pwa_install_on_device": "not tested",
-    "mobile_physical": "not tested",
-    "real_auth_upload_request_or_backend": "disabled for public isolated review",
-    "resources": "37 HTML/CSS/font/icon/manifest/script resources returned HTTP 200.",
-    "browser_light_theme": "menu theme toggle confirmed in previous isolated V8 screenshot, not rechecked for V12",
-    "card_geometry": "source CSS and markup unchanged; only pre-card vertical margins change",
-    "script_syntax": "V19 fixed; V20 discovered request modal requires .open class; V21 adds it and is pending browser verification.",
-    "request_flow": "V21 local request-preview flow now applies .open and focus; verify open/close in browser."
+    "browser_desktop": "V23 visual screenshot reviewed at 1366px; service detail modal, local request modal, close/cancel/finish and account menu tested. Final browser console had no errors.",
+    "browser_responsive": "V23 screenshot page inspected at 320/360/390 CSS px; first card and Marketing y automatización label are visible before the fixed bottom dock; service card dimensions/copy unchanged.",
+    "request_flow": "Pedir ahora opens local modal. Close and Listo work. Final toast confirmed no request is sent/saved. Phone/uploads remain disabled.",
+    "hover_and_reduced_motion": "CSS hover/focus effects and reduced-motion override in place; no physical device hover/motion QA.",
+    "pwa_install_on_device": "not tested on a physical phone or desktop install",
+    "physical_mobile": "not tested on a real device",
+    "real_auth_upload_request_or_backend": "not connected in review stage"
   },
   "pwa_assets": {
     "mobile": "opaque red-S halo PNGs plus maskable variant",
@@ -52,26 +54,12 @@
     "manifests": "separate isolated mobile and desktop manifests selected locally; device install tests pending"
   },
   "greeting": {
-    "nine_rotating_five-word_prompts": "read the brand name from existing name fields; generic fallback until entered",
-    "persistence": "sessionStorage in this browser tab only; no network or backend write; entered name is not prefilled for a different user/browser session.",
-    "other_copy": "existing slogan and all service cards remain unchanged",
-    "phrases": [
-      "¿Qué hacemos hoy por {marca}?",
-      "¿Qué creamos hoy con {marca}?",
-      "¿Qué impulsamos hoy en {marca}?",
-      "¿Qué mejoramos hoy para {marca}?",
-      "¿Qué construimos hoy con {marca}?",
-      "¿Qué ideas damos a {marca}?",
-      "¿Qué soluciones hacemos para {marca}?",
-      "¿Qué oportunidad abrimos a {marca}?",
-      "¿Cómo avanzamos hoy con {marca}?"
-    ],
-    "local_account_preview": "The existing profile field updates the nine short questions; business name stays in this browser tab, no backend save.",
-    "fixed_words_before_brand": 4
+    "nine_short_questions": "rotate on a timer unless reduced-motion is enabled",
+    "brand_name": "user can type in existing business field; only stored in current browser tab session, not sent or saved to a user account",
+    "approved_copy": "slogan including Nosotr@s and all nine service card titles, descriptions, status, and prices match the live HTML"
   },
   "layout": {
-    "card_width_height_padding": "unchanged relative to production stylesheet",
-    "first_view": "first category and next category heading now fit better; tightened only vertical margins before first shelf",
-    "mobile_first_fold": "V18 overrides the first category heading bottom margin/padding to 2px each on mobile to lift all first-row content and the following category title; card width/height/padding/type remain source CSS."
+    "desktop": "Only pre-first shelf whitespace tuned; card markup, card grid and card text remain sourced from production stylesheet/HTML.",
+    "mobile_first_fold": "V18/V17 spacing overrides reclaim header margins so Marketing y automatización heading is visible above bottom navigation at 320/360/390px; no card width/height/padding/type changed."
   }
 }

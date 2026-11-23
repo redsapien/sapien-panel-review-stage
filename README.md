@@ -1,25 +1,14 @@
-# Sapien · espacio aislado de revisión V21
+# Sapien · revisión aislada V23
 
-Vista pública de prueba, separada de `panel.redsapien.co`. Parte del HTML y la hoja CSS públicos del panel; no carga scripts de producción, Supabase, cuentas ni datos reales. No tiene acceso de escritura a producción.
+Vista pública de revisión para `panel.redsapien.co`; no es una cuenta operativa ni tiene conexión con producción. El contenido y la hoja visual parten del panel, pero autenticación, Supabase y escrituras externas están retirados.
 
-- El wordmark «Sapien» se mantiene centrado en el mismo espacio de la barra y se reduce aproximadamente 30% también en móvil; el fondo es translúcido y muy sutil.
-- Los nueve pictogramas V6 reemplazan los originales, sin aro: mantienen la caja de 32 × 32 px y el dibujo de 22 × 22 px de producción. Los controles de menú, cierre, volver y carrusel reciben el halo rojo sin cambiar sus dimensiones ni posición.
-- No cambia el texto ni los precios de ninguna tarjeta. La franja de prueba y el sello «Orgullosamente de Colombia» no ocupan espacio en el panel.
-- El saludo rota por nueve frases cortas; usa el campo existente de nombre de marca. La edición es solo de esta pestaña (sessionStorage), no se envía ni guarda en una cuenta. Los botones de guardar, solicitar, autenticación y carga no funcionan en esta demo.
-- Los iconos de instalación y manifiestos separados para móvil/escritorio pertenecen a esta ruta de pruebas. Se revisó la vista en navegador a 320, 360 y 390 px, y se verificaron sus 37 recursos; la instalación y los gestos táctiles en un dispositivo físico todavía no están comprobados.
+- Sapien se muestra en la misma posición superior y alrededor de 30% más pequeño, con fondo translúcido muy sutil.
+- Se reemplazaron los nueve pictogramas por la última propuesta V6. Conservan la caja productiva de 32 × 32 px y el dibujo de 22 × 22 px. Un aro fino toma un acento propio por icono y aumenta suavemente al pasar cursor o recibir foco.
+- Menú, engranaje, volver, X de los modales y flechas comparten halos circulares rojos. No se añadieron márgenes ni superficies al tamaño de los controles.
+- La trama neuronal del fondo es decorativa, está detrás del catálogo, no bloquea toques ni añade altura de página.
+- Se redujo el espacio sobrante de bienvenida/encabezados en móvil; la etiqueta «Marketing y automatización» aparece sobre la navegación inferior a 320/360/390 px. La geometría, tipografía, textos y precios de las tarjetas se cotejaron contra el HTML actual.
+- Detalle del servicio, navegación, carruseles, menús y controles X se prueban en local. «Pedir ahora» abre una solicitud de demostración; «Listo» solo cierra y avisa que no se envió. No se capturan teléfonos, archivos ni datos; auth y guardado siguen apagados.
+- El nombre de negocio puede escribirse en el perfil para previsualizar nueve preguntas cortas; se conserva solo en la sesión de esa pestaña. El copy aprobado, incluido «Nosotr@s», se mantiene.
+- Los manifiestos e iconos para PWA se limitan a este espacio de prueba. No se verificó instalación en teléfono físico.
 
-La prueba abre de forma pública para cualquiera que tenga la dirección; no es una cuenta ni una copia operativa. La vista puede revisarse en escritorio, móvil emulado y en `/qa-mobile-v10.html`. No se modificó ni publicó Sapien en producción.
-
-- En V21, cada pictograma tiene un aro fino del color propio; se ilumina suavemente al pasar el cursor o recibir foco, sin cambiar la caja 32 × 32 ni el glifo 22 × 22. Flechas, volver, X, menú y colapsar comparten halo rojo con transición; la animación respeta movimiento reducido.
-- Se añadió una trama fija de red/neuronas muy tenue en el fondo. No ocupa espacio, no recibe clics y no anima constantemente. Se ubica detrás del contenido tanto en escritorio como en móvil.
-- Se redujo solo el margen entre bienvenida, frase y primera sección para acercar la fila de tarjetas y su siguiente encabezado al primer pliegue.
-
-- V21 móvil: se compactó exclusivamente el espacio vacío de bienvenida/encabezado de sección para acercar «Marketing y automatización» al primer pliegue; dimensiones y tipografía de tarjetas intactas.
-
-- V21 corrige una regla antigua que dejaba 26 px bajo el primer título de categoría; el valor móvil pasa a 4 px. La intención es hacer visible el siguiente título encima del dock; tarjeta, tamaño tipográfico y copy no cambian. Verificar en la página QA.
-
-- V21: ajusta a 2 px el margen inferior y el padding bajo el primer encabezado móvil; sube la primera hilera y el siguiente encabezado sin tocar la geometría de las tarjetas.
-
-- La tarjeta abre el detalle y «Pedir ahora» abre un formulario local de demostración. Cerrar/cancelar funciona; «Listo» solo confirma que no se envió nada. No se capturan datos, no se guarda y no se envía.
-
-- V23 dibuja la trama neuronal detrás del catálogo, no sobre él; la capa no ocupa espacio, no bloquea toques y reduce su intensidad en móvil.
+Revisión en navegador: escritorio 1366 px y página de QA emulada 320/360/390 px. No equivale a QA de dispositivo real. La página es pública para quien tenga el enlace. No se modificó ni se publicó el panel productivo.
