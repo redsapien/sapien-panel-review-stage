@@ -7,8 +7,9 @@
   "source_css": "current public panel stylesheet snapshot; only asset URLs rewritten for the subpath",
   "cards": {
     "count": 9,
-    "copy_prices_and_svg_match_live_source": true,
-    "layout_overridden_by_identity_layer": false
+    "layout_overridden_by_identity_layer": false,
+    "copy_prices_match_live_source": true,
+    "service_pictograms": "Nine original V6 concepts replace the previous icons"
   },
   "identity": "custom vector wordmark Sapien (uppercase S, lowercase apien) and vivid per-card neon rings",
   "pwa": "separate manifest, icons, and stage-scoped static cache; no production worker or data",
