@@ -42,7 +42,7 @@
   ],
   "qa": {
     "browser_desktop": "V23 visual screenshot reviewed at 1366px; service detail modal, local request modal, close/cancel/finish and account menu tested. Final browser console had no errors.",
-    "browser_responsive": "V24 screenshot: heading still overlapped bottom dock at 320px; V25 tightens only empty margin below first shelf and welcome block to resolve. Recheck required.",
+    "browser_responsive": "V23 screenshot page inspected at 320/360/390 CSS px; first card and Marketing y automatización label are visible before the fixed bottom dock; service card dimensions/copy unchanged.",
     "request_flow": "Pedir ahora opens local modal. Close and Listo work. Final toast confirmed no request is sent/saved. Phone/uploads remain disabled.",
     "hover_and_reduced_motion": "CSS hover/focus effects and reduced-motion override in place; no physical device hover/motion QA.",
     "pwa_install_on_device": "not tested on a physical phone or desktop install",
@@ -66,9 +66,9 @@
   },
   "layout": {
     "desktop": "Only pre-first shelf whitespace tuned; card markup, card grid and card text remain sourced from production stylesheet/HTML.",
-    "mobile_first_fold": "V25 uses full content width for welcome and removes trailing padding under first horizontal track; preserves all texts/card width."
+    "mobile_first_fold": "V18/V17 spacing overrides reclaim header margins so Marketing y automatización heading is visible above bottom navigation at 320/360/390px; no card width/height/padding/type changed."
   },
-  "version": "V25",
+  "version": "V24",
   "changes": [
     "Unified the circle, size, red halo and hover treatment for back and close buttons.",
     "Hamburger glyph +20% while original hit target and layout remain.",
