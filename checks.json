@@ -1,5 +1,5 @@
 {
-  "version": "V42",
+  "version": "V43",
   "scope": "Isolated GitHub Pages preview only; production unchanged.",
   "changes": [
     "Card shows $50.000 COP and “Pago único” at left; “Ver qué incluye” button is larger at right. “Pago contra entrega” is only in modal.",
@@ -17,10 +17,11 @@
     "Named the assistant Antonella IA, removed repeated Sapien branding from assistant UI and tuned greeting/prompts to business review.",
     "Maintains in-panel conversation scroll, focusing the composer without moving the outer page.",
     "Info & more received coherent restrained section/card polish.",
-    "Connector/agent view names the future assistant Antonella IA and keeps its not-yet-active status explicit."
+    "Connector/agent view names the future assistant Antonella IA and keeps its not-yet-active status explicit.",
+    "Restored all V41 layout rules before V42 identity overrides; explicitly aligns web offer price and CTA side-by-side; recolors capability glyphs and raises icon-ring specificity; removed chat focus scrollIntoView to keep viewport stable."
   ],
   "qa": {
-    "source": "V42 static DOM, SVG and asset checks passed; visual browser checks pending."
+    "source": "V43 DOM/asset checks pass; waiting for live browser verification at desktop, 320/360/390 emulation and repeated chat turns."
   },
   "disabled": [
     "Real AI/provider API",

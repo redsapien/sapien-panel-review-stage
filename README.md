@@ -10,3 +10,5 @@
 **Límite:** Antonella sigue siendo una demostración local por reglas, no accede a cuentas ni datos, no monitorea estado real, no ejecuta acciones y no está conectada a una API. Para producción se requiere implementar y probar proveedor/servidor, autorización, permisos y acciones.
 
 Solo URL aislada de revisión; producción y dominio panel.redsapien.co intactos. QA en móvil emulado; falta validación en dispositivo físico/teclado real.
+
+V43 restores the V41 layout layer and removes rainbow accents from the web capability icons; it uses a single subtle family accent. Browser revalidation is required.
