@@ -1,4 +1,4 @@
-# Sapien · espacio aislado de revisión V16
+# Sapien · espacio aislado de revisión V17
 
 Vista pública de prueba, separada de `panel.redsapien.co`. Parte del HTML y la hoja CSS públicos del panel; no carga scripts de producción, Supabase, cuentas ni datos reales. No tiene acceso de escritura a producción.
 
@@ -10,8 +10,10 @@ Vista pública de prueba, separada de `panel.redsapien.co`. Parte del HTML y la 
 
 La prueba abre de forma pública para cualquiera que tenga la dirección; no es una cuenta ni una copia operativa. La vista puede revisarse en escritorio, móvil emulado y en `/qa-mobile-v10.html`. No se modificó ni publicó Sapien en producción.
 
-- En V16, cada pictograma tiene un aro fino del color propio; se ilumina suavemente al pasar el cursor o recibir foco, sin cambiar la caja 32 × 32 ni el glifo 22 × 22. Flechas, volver, X, menú y colapsar comparten halo rojo con transición; la animación respeta movimiento reducido.
+- En V17, cada pictograma tiene un aro fino del color propio; se ilumina suavemente al pasar el cursor o recibir foco, sin cambiar la caja 32 × 32 ni el glifo 22 × 22. Flechas, volver, X, menú y colapsar comparten halo rojo con transición; la animación respeta movimiento reducido.
 - Se añadió una trama fija de red/neuronas muy tenue en el fondo. No ocupa espacio, no recibe clics y no anima constantemente. Se ubica detrás del contenido tanto en escritorio como en móvil.
 - Se redujo solo el margen entre bienvenida, frase y primera sección para acercar la fila de tarjetas y su siguiente encabezado al primer pliegue.
 
-- V16 móvil: se compactó exclusivamente el espacio vacío de bienvenida/encabezado de sección para acercar «Marketing y automatización» al primer pliegue; dimensiones y tipografía de tarjetas intactas.
+- V17 móvil: se compactó exclusivamente el espacio vacío de bienvenida/encabezado de sección para acercar «Marketing y automatización» al primer pliegue; dimensiones y tipografía de tarjetas intactas.
+
+- V17 corrige una regla antigua que dejaba 26 px bajo el primer título de categoría; el valor móvil pasa a 4 px. La intención es hacer visible el siguiente título encima del dock; tarjeta, tamaño tipográfico y copy no cambian. Verificar en la página QA.
