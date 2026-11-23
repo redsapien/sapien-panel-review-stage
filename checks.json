@@ -1,0 +1,40 @@
+{
+  "status": "public isolated review stage",
+  "production_untouched": true,
+  "production_backend_or_supabase_loaded": false,
+  "external_calls_and_forms_blocked": true,
+  "visible_stage_banner": false,
+  "source_css": "current public panel stylesheet snapshot; only asset URLs rewritten for the subpath",
+  "cards": {
+    "count": 9,
+    "copy_prices_and_svg_match_live_source": true,
+    "layout_overridden_by_identity_layer": false
+  },
+  "identity": "custom vector wordmark Sapien (uppercase S, lowercase apien) and vivid per-card neon rings",
+  "pwa": "separate manifest, icons, and stage-scoped static cache; no production worker or data",
+  "interactive_local_demo": [
+    "section navigation",
+    "carousel arrows",
+    "service detail modal",
+    "theme toggle",
+    "install guidance"
+  ],
+  "disabled": [
+    "authentication",
+    "orders/request submission",
+    "profile updates",
+    "uploads",
+    "push notifications",
+    "external links"
+  ],
+  "qa": {
+    "browser_desktop": "not yet; deployment review step pending",
+    "responsive_mobile_css": "source rules preserved; physical-device verification not performed",
+    "pwa_install_on_device": "not performed"
+  },
+  "pwa_assets": {
+    "mobile": "opaque red-S halo PNGs plus maskable variant",
+    "desktop": "transparent red-S halo PNGs",
+    "separate_stage_scope": true
+  }
+}
