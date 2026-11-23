@@ -1,13 +1,11 @@
-# Sapien · revisión aislada V49
+# Sapien · revisión aislada V50
 
-Esta prueba está aislada; **no se modificó el panel ni el dominio productivo**.
+Staging visual/interactiva local; **no altera producción**.
 
-- El precio `$50.000` y “COP · Pago único” bajan un poco dentro de la tarjeta de Su web + IA.
-- El CTA “Ver qué incluye” queda junto al precio, más grande y con fondo rojo y texto blanco.
-- En el modal, “Lista en 24 horas” y “Pague contra entrega, al verla online” conservan su texto; los paneles ahora tienen un fondo carbón/coral translúcido, sobrio y sin tonos verdes/azules.
+- Los tres iconos bajo el párrafo de “Su web + IA” se diferencian con un halo neón discreto: coral para web, turquesa para analítica, violeta para IA.
+- En el modal, el compromiso de 24 horas lleva un reloj y el pago contra entrega un escudo/pago verde; copy se conserva. Tarjetas compactas carbón translúcido; en pantallas estrechas pasan a filas para mantener legibilidad.
+- El icono junto a WhatsApp es mayor y legible. El formulario sigue deshabilitado/solo demostración en staging.
+- En “Notificaciones” se quita el icono de campana repetido del estado vacío; queda la campana de encabezado.
+- El nombre del negocio del campo local cambia el rótulo del asistente a “Agente de [negocio]”; si no hay negocio, se muestra Antonella IA. Nombre solo en sessionStorage del navegador de prueba; no se lee Gmail ni perfil/registro real y no hay modelo conectado.
 
-## Comprobación
-
-Se vio en escritorio y en las vistas CSS 320, 360 y 390 px. En la vista de 320 px se abrió el modal: el texto y el botón no se cortan; la ventana mantiene su desplazamiento interno. La página y el modal de V49 no mostraron errores de consola.
-
-No se probó un teléfono físico ni el teclado virtual. La frase de la solicitud terminó en “si dan clic sobre cuáles”; los tres símbolos de capacidades siguen siendo informativos y no se les asignó una acción nueva hasta aclarar qué quiere que ocurra al tocarlos.
+Producción conserva por ahora otro párrafo de tarjeta: “Su sitio web para presentar su negocio y facilitar el contacto.” El velo de navegación productivo se observó, pero no se tocó. Backend, notificaciones reales, teclado de hardware y despliegue productivo quedan fuera de esta revisión aislada.

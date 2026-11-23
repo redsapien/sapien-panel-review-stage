@@ -1,5 +1,5 @@
 {
-  "version": "V49",
+  "version": "V50",
   "scope": "Isolated GitHub Pages preview only; production unchanged.",
   "changes": [
     "Card shows $50.000 COP and “Pago único” at left; “Ver qué incluye” button is larger at right. “Pago contra entrega” is only in modal.",
@@ -29,15 +29,15 @@
     "V46 fixes stylesheet ordering explicitly; bright red CTA, subdued icon circles, simpler featured card edge and additional consistent category breathing room.",
     "V47 final modal cleanup: assurance accents now match Sapien coral, example carousel scrollbar hidden but remains swipeable; all 3 feature icons use same restrained color.",
     "V48 targets modal CSS outside .app correctly; removes remaining green/blue assurance accents and hides the visual scrollbar while preserving swipe.",
-    "V49 addresses user screenshots: price/payment row positioned naturally closer to bottom of web card; CTA is larger, lower, white-on-coral red. Modal 24-hour and pay-on-delivery blocks use a restrained translucent black/coral treatment rather than green/blue."
+    "V49 addresses user screenshots: price/payment row positioned naturally closer to bottom of web card; CTA is larger, lower, white-on-coral red. Modal 24-hour and pay-on-delivery blocks use a restrained translucent black/coral treatment rather than green/blue.",
+    "Card capability glyphs use restrained colored neons: coral web, teal analytics, violet AI; subtle halos, accessible hover/focus and reduced-motion support.",
+    "Modal 24-hour promise gets a clock icon; pay-on-delivery gets a green shield/payment icon; same copy retained.",
+    "WhatsApp icon is enlarged in the test request dialog; input remains disabled in isolated test.",
+    "Removed duplicate notification bell from empty state, retaining section-level bell.",
+    "Assistant responds as “Agente de [business]” when a business is entered into the local test settings; default remains Antonella IA. This is sessionStorage-only UI personalization, not account/Gmail/backend data."
   ],
   "qa": {
-    "desktop": "Fresh V49 desktop review completed. The web card price/meta row is lowered toward the card bottom; the red CTA is visibly larger and aligned beside it. Modal blocks retain wording and have translucent dark/black-red treatment.",
-    "responsive": "QA view with 320×760 modal open plus 390×760 and 360×760 cards; no clipping/overlap observed. At 320px price line and button fit on one row; modal payment rows fit and remain legible with normal modal scroll.",
-    "modal": "“Lista en 24 horas” and “Pague contra entrega, al verla online” preserved. Background is subdued translucent charcoal/coral, no mint/blue accent. Request remains demo only.",
-    "console": "Fresh V49 page and modal showed no console errors.",
-    "production": "Production remains untouched; only isolated GitHub Pages test updated.",
-    "physical_device": "CSS iframe emulation only; not physically tested on a phone or virtual keyboard."
+    "status": "V50 build prepared; must finish desktop/mobile render checks before calling it validated."
   },
   "disabled": [
     "Real AI/provider API",
@@ -50,5 +50,11 @@
   "note": "The local chat still gives rule-based demo recommendations only; it does not monitor live business state or activate actions.",
   "assistant_name": "Antonella IA. Sapien remains the panel/product brand.",
   "assistant_capability": "Antonella IA remains local demo only; it does not access Gmail or business context, monitor activity, use an external model/API, save chats or execute actions.",
-  "production_review": "Observed deployed mobile nav assets: panel-nav-glass.js sets a translucent gradient; panel-top-glass-veil.js uses a vertical mask fade. Neither production asset or deployment was modified."
+  "production_review": "Observed deployed mobile nav assets: panel-nav-glass.js sets a translucent gradient; panel-top-glass-veil.js uses a vertical mask fade. Neither production asset or deployment was modified.",
+  "production_audit": {
+    "web_card_copy": "Production currently says: “Su sitio web para presentar su negocio y facilitar el contacto.” V50 test card says: “Una web clara para su negocio.” This copy divergence is recorded, not changed in production.",
+    "glass": "Production top-nav veil/mask and mobile navigation glass remain unchanged; verified previously through live production assets.",
+    "notifications": "Production notification module was not changed; V50 only hides one repeated empty-state bell illustration in isolated staging.",
+    "backend": "No real backend/inference/model/auth/notification delivery was connected or changed."
+  }
 }
