@@ -9,9 +9,10 @@
     "count": 9,
     "layout_overridden_by_identity_layer": false,
     "copy_prices_match_live_source": true,
-    "service_pictograms": "Nine original V6 concepts replace the previous icons"
+    "service_pictograms": "Nine original V6 concepts replace the previous icons",
+    "service_icon_frame": "none; original 32×32 container and 22×22 pictogram dimensions preserved, no layout changes"
   },
-  "identity": "custom vector wordmark Sapien (uppercase S, lowercase apien) and vivid per-card neon rings",
+  "identity": "Sapien wordmark reduced about 30%, centered in the same nav slot with very subtle translucent backing; service icons use the last V6 artwork without a surrounding circle; control/close buttons retain original size and positions with a red halo.",
   "pwa": "separate manifest, icons, and stage-scoped static cache; no production worker or data",
   "interactive_local_demo": [
     "section navigation",
@@ -23,20 +24,41 @@
   "disabled": [
     "authentication",
     "orders/request submission",
-    "profile updates",
     "uploads",
     "push notifications",
-    "external links"
+    "external links",
+    "business-name preview is session-only; account save remains disabled",
+    "profile save remains disabled; brand-name typing only previews the greeting for this browser tab"
   ],
   "qa": {
-    "browser_desktop": "not yet; deployment review step pending",
-    "responsive_mobile_css": "source rules preserved; physical-device verification not performed",
-    "pwa_install_on_device": "not performed"
+    "browser_desktop": "not yet verified on V10 deploy",
+    "browser_responsive": "not yet verified on V10 deploy",
+    "carousel_touch_swipe": "not tested",
+    "pwa_install_on_device": "not tested",
+    "mobile_physical": "not tested",
+    "real_auth_upload_request_or_backend": "disabled for public isolated review"
   },
   "pwa_assets": {
     "mobile": "opaque red-S halo PNGs plus maskable variant",
     "desktop": "transparent red-S halo PNGs",
     "separate_stage_scope": true,
     "manifests": "separate isolated mobile and desktop manifests selected locally; device install tests pending"
+  },
+  "greeting": {
+    "nine_rotating_five-word_prompts": "read the brand name from existing name fields; generic fallback until entered",
+    "persistence": "same browser tab only; no server or account write",
+    "other_copy": "existing slogan and all service cards remain unchanged",
+    "phrases": [
+      "¿Qué creamos para {marca} hoy?",
+      "¿Qué hacemos hoy por {marca}?",
+      "¿Qué mejoramos en {marca} hoy?",
+      "¿Cómo impulsamos a {marca} hoy?",
+      "¿Qué construimos juntos en {marca}?",
+      "¿Qué solución creamos para {marca}?",
+      "¿Qué idea ponemos en {marca}?",
+      "¿Qué oportunidad abrimos para {marca}?",
+      "¿Qué mejoramos primero en {marca}?"
+    ],
+    "local_account_preview": "The existing profile field updates the nine short questions; business name stays in this browser tab, no backend save."
   }
 }

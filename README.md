@@ -1,7 +1,11 @@
-# Sapien · espacio visual de prueba (V8)
+# Sapien · espacio aislado de revisión V10
 
-Dirección pública separada de `panel.redsapien.co`, desplegada solo para revisión. Su fuente es el HTML del panel público y la hoja CSS vigente; se removieron los scripts de producción y todas las conexiones, identidades personales y enlaces que pudieran enviar datos. El backend de producción no se usa. Acciones de cuenta, solicitudes, notificaciones y subidas se mantienen desactivadas; carruseles, navegación, tema y detalle visual del servicio se pueden probar localmente. La PWA de esta URL usa identidad, manifiesto, iconos separados para escritorio/móvil y caché aislados y contiene solo archivos estáticos de esta ruta.
+Vista pública de prueba, separada de `panel.redsapien.co`. Parte del HTML y la hoja CSS públicos del panel; no carga scripts de producción, Supabase, cuentas ni datos reales. No tiene acceso de escritura a producción.
 
-Los 9 títulos, descripciones y precios se conservan; los iconos fueron sustituidos por los nueve conceptos V6 ya presentados. La capa V8 solo cambia el wordmark, iconos enmarcados, halos de control, ubicación del wordmark dentro del nav, elimina el masthead de segunda fila y la frase «Orgullosamente de Colombia» del panel.
+- El wordmark «Sapien» se mantiene centrado en el mismo espacio de la barra y se reduce aproximadamente 30%; el fondo es translúcido y muy sutil.
+- Los nueve pictogramas V6 reemplazan los originales, sin aro: mantienen la caja de 32 × 32 px y el dibujo de 22 × 22 px de producción. Los controles de menú, cierre, volver y carrusel reciben el halo rojo sin cambiar sus dimensiones ni posición.
+- No cambia el texto ni los precios de ninguna tarjeta. La franja de prueba y el sello «Orgullosamente de Colombia» no ocupan espacio en el panel.
+- El saludo rota por nueve frases cortas; usa el campo existente de nombre de marca. La edición es solo de esta pestaña (sessionStorage), no se envía ni guarda en una cuenta. Los botones de guardar, solicitar, autenticación y carga no funcionan en esta demo.
+- Los iconos de instalación y manifiestos separados para móvil/escritorio pertenecen a esta ruta de pruebas. La instalación en un dispositivo físico todavía no está comprobada.
 
-No confundir con el panel de operación ni compartir como acceso a una cuenta. La página es pública, no indexable; cualquier persona con el enlace puede verla. No se afirma QA en teléfono físico ni instalación probada en dispositivos. Cualquier despliegue productivo requiere aprobación y QA separados.
+La prueba abre de forma pública para cualquiera que tenga la dirección; no es una cuenta ni una copia operativa. La vista puede revisarse en escritorio, móvil emulado y en `/qa-mobile-v10.html`. No se modificó ni publicó Sapien en producción.
