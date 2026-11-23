@@ -1,5 +1,5 @@
 {
-  "version": "V45",
+  "version": "V46",
   "scope": "Isolated GitHub Pages preview only; production unchanged.",
   "changes": [
     "Card shows $50.000 COP and “Pago único” at left; “Ver qué incluye” button is larger at right. “Pago contra entrega” is only in modal.",
@@ -25,10 +25,11 @@
     "Web card amount/COP/pago único and its red conversion CTA given stronger but tidy contrast.",
     "Web modal visual hierarchy refined while retaining payment phrase and demo restrictions.",
     "Antonella demo activity badge and scripted processing spinner use restrained red/coral accents; no claim of actual AI reasoning or business monitoring.",
-    "V45 unifies all nine service-icon halos and three web capability glyphs into muted single family colors; softens the featured-card outline. Price now uses large $50.000 with a clear supporting line “COP · Pago único”. Additional mobile/desktop category spacing enforced. Modal separators/checks use restrained warm accent."
+    "V45 unifies all nine service-icon halos and three web capability glyphs into muted single family colors; softens the featured-card outline. Price now uses large $50.000 with a clear supporting line “COP · Pago único”. Additional mobile/desktop category spacing enforced. Modal separators/checks use restrained warm accent.",
+    "V46 fixes stylesheet ordering explicitly; bright red CTA, subdued icon circles, simpler featured card edge and additional consistent category breathing room."
   ],
   "qa": {
-    "source": "V45 DOM checks pending; deployed-browser visual QA needed at desktop and 320/360/390."
+    "source": "Static checks passed; live browser verification pending."
   },
   "disabled": [
     "Real AI/provider API",

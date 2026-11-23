@@ -12,3 +12,5 @@ Staging de prueba. **Producción no se modificó.**
 QA en navegador aún pendiente para esta V44; 320/360/390 emulación y prueba desktop deben repetirse tras el deploy. Teclado nativo requiere dispositivo físico. Antonella no accede al Gmail o al contexto de producción: registro, consulta de correo, datos, monitorización, API, herramientas, memoria y acciones reales no están conectados en esta prueba.
 
 V45 polishes V44: one quiet accent per icon family, softer outline, red CTA and a legible support line “COP · Pago único”, plus a cleaner modal and slightly wider category spacing.
+
+V46 loads V43–V45 stylesheets in sequence before final CTA/icon override.
