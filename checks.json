@@ -50,7 +50,12 @@
     "physical_mobile": "not tested on a real handset",
     "pwa_install_on_device": "not installed on a physical device",
     "production": "not touched",
-    "console": "V27 console showed automatic favicon 404; V28 assigns one local favicon and removes duplicate. No other failed resources found in local request audit; final console recheck after deployment."
+    "console": "V27 console showed automatic favicon 404; V28 assigns one local favicon and removes duplicate. No other failed resources found in local request audit; final console recheck after deployment.",
+    "price_layout": "V30 grid pairs $50.000 COP left with Pago contra entrega at right, button beneath; responsive test pending.",
+    "modal_note": "V30 removes .web-compact-pending from the service modal; verify modal no longer shows IA y analítica line.",
+    "background": "V30 collapses duplicate background mesh layers and reduces visible mesh alpha to 0.16 desktop / 0.105 mobile; final visual check pending.",
+    "greeting_spacing": "V30 increases gap by a few CSS pixels; responsive first fold test pending.",
+    "module_label": "Sapien IA replaces Una IA on sidebar, dock, tooltip, section title and accessible name."
   },
   "pwa_assets": {
     "mobile": "opaque red-S halo PNGs plus maskable variant",
@@ -69,16 +74,12 @@
     "ai_mobile": "V27 fits the chat panel above the mobile dock; processing and conversation can scroll inside their designated space.",
     "global_copy": "Keeps all service card copy and prices as production, except the requested welcome phrase; shortened redundant empty/info labels and compacted whitespace."
   },
-  "version": "V29",
+  "version": "V30",
   "changes": [
-    "Unified the circle, size, red halo and hover treatment for back and close buttons.",
-    "Hamburger glyph +20% while original hit target and layout remain.",
-    "Service glyphs +20% inside unchanged 32px production icon box.",
-    "Updated promise to Creamos todo y lo dejamos en automático. Usted ve crecer su negocio y vender más.",
-    "Tech-styled navigation icons; Hablemos renamed Una IA.",
-    "Una IA section is an explicitly local non-connected interactive demo with orbiting processing indicator; it does not store, send or claim AI work.",
-    "Info y más empty-state copy shortened and headings made easier to scan.",
-    "First-screen whitespace/card padding reduced without changing widths or wording; verify viewport fit.",
-    "Hide only the decorative scrollbar on the scrollable AI message pane; native touch and wheel scroll remain enabled."
+    "Softer, almost transparent background mesh; duplicate background layers removed.",
+    "Greeting sections gain a little breathing room.",
+    "Hablemos/Una IA renamed Sapien IA in desktop/mobile navigation and title.",
+    "$50,000 COP paired with Pago contra entrega beside the price; CTA on the next row.",
+    "Removed IA y analítica · por desplegar note from the suggested-domain modal."
   ]
 }
