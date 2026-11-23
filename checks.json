@@ -20,16 +20,17 @@
     "service detail modal",
     "theme toggle",
     "install guidance",
-    "test-only controls enabled via fixed staging script; verified after syntax repair pending deployment"
+    "service detail modal opens/closes",
+    "Pedir ahora opens local-only request modal; close/cancel works and Listo only acknowledges that nothing was sent"
   ],
   "disabled": [
     "authentication",
-    "orders/request submission",
     "uploads",
     "push notifications",
     "external links",
     "business-name preview is session-only; account save remains disabled",
-    "profile save remains disabled; brand-name typing only previews the greeting for this browser tab"
+    "profile save remains disabled; brand-name typing only previews the greeting for this browser tab",
+    "request submission and profile save; request demo captures no contact and sends no data"
   ],
   "qa": {
     "browser_desktop": "V18 card copy and responsive spacing checked; stage controls require V19 script recheck",
@@ -41,7 +42,8 @@
     "resources": "37 HTML/CSS/font/icon/manifest/script resources returned HTTP 200.",
     "browser_light_theme": "menu theme toggle confirmed in previous isolated V8 screenshot, not rechecked for V12",
     "card_geometry": "source CSS and markup unchanged; only pre-card vertical margins change",
-    "script_syntax": "V18 had a malformed registration-call line; corrected in V19, verifying in browser"
+    "script_syntax": "V18 had a malformed registration-call line; corrected in V19, verifying in browser",
+    "request_flow": "V20 local flow implemented; browser test pending."
   },
   "pwa_assets": {
     "mobile": "opaque red-S halo PNGs plus maskable variant",
