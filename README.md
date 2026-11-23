@@ -1,4 +1,4 @@
-# Sapien · espacio aislado de revisión V11
+# Sapien · espacio aislado de revisión V12
 
 Vista pública de prueba, separada de `panel.redsapien.co`. Parte del HTML y la hoja CSS públicos del panel; no carga scripts de producción, Supabase, cuentas ni datos reales. No tiene acceso de escritura a producción.
 

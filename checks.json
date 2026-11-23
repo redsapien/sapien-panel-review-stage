@@ -31,7 +31,7 @@
     "profile save remains disabled; brand-name typing only previews the greeting for this browser tab"
   ],
   "qa": {
-    "browser_desktop": "V10 opened; account profile preview field updated the heading locally, service card details modal opened/closed; V11 visual check pending.",
+    "browser_desktop": "V11 browser check: brand preview changed to Café Prueba, card copy unchanged, account menu opened; V12 circular control treatment verification pending.",
     "browser_responsive": "V8h tested in 320/360/390 CSS pixel iframes; V11 final check pending.",
     "carousel_touch_swipe": "not tested",
     "pwa_install_on_device": "not tested",
