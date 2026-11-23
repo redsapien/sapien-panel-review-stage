@@ -1,5 +1,5 @@
 {
-  "version": "V46",
+  "version": "V47",
   "scope": "Isolated GitHub Pages preview only; production unchanged.",
   "changes": [
     "Card shows $50.000 COP and “Pago único” at left; “Ver qué incluye” button is larger at right. “Pago contra entrega” is only in modal.",
@@ -26,10 +26,18 @@
     "Web modal visual hierarchy refined while retaining payment phrase and demo restrictions.",
     "Antonella demo activity badge and scripted processing spinner use restrained red/coral accents; no claim of actual AI reasoning or business monitoring.",
     "V45 unifies all nine service-icon halos and three web capability glyphs into muted single family colors; softens the featured-card outline. Price now uses large $50.000 with a clear supporting line “COP · Pago único”. Additional mobile/desktop category spacing enforced. Modal separators/checks use restrained warm accent.",
-    "V46 fixes stylesheet ordering explicitly; bright red CTA, subdued icon circles, simpler featured card edge and additional consistent category breathing room."
+    "V46 fixes stylesheet ordering explicitly; bright red CTA, subdued icon circles, simpler featured card edge and additional consistent category breathing room.",
+    "V47 final modal cleanup: assurance accents now match Sapien coral, example carousel scrollbar hidden but remains swipeable; all 3 feature icons use same restrained color."
   ],
   "qa": {
-    "source": "Static checks passed; live browser verification pending."
+    "desktop": "Fresh V46 build was visually reviewed desktop: brand promise, categories/cards, red CTA, price line and modal. Antonella submitted a prompt and returned a local response in its thread without page jump. V47 only adjusts styling of the modal assurance labels, scrollbar and icon accents after that check.",
+    "mobile_emulation": "QA page loaded with 320, 360 and 390 CSS-pixel iframes at 760px height. Card shows price/terms and CTA on one row, shortened promise wraps naturally at narrow width, categories/slider cards have deliberate separation; V46 was visually checked in the emulator. Native mobile keyboard is not physically tested.",
+    "copy": "Promise is “Creamos todo y lo dejamos en automático.” Nine card summaries are shortened; the web card says $50.000 + “COP · Pago único”; the card contains no contra-entrega text and the modal retains “Pague contra entrega, al verla online”.",
+    "modal": "Clicked open in browser; details and payment statement present; CTA still marked as non-sending demonstration. V47 styles modal assurance blocks in coral and hides the scrollbar while preserving horizontal swipe.",
+    "static_assets": "All page-linked CSS/JS, logo and service icon resources were verified as HTTP 200 in page/resource pass. V46/V47 bundles and mobile QA route also return HTTP 200 after publish.",
+    "console": "The browser reports one generic “Failed to load resource: 404” without revealing a URL. The 29 explicitly enumerated static page references checked in V43 all returned 200; the remaining console request has not been identified. Do not claim a zero-error console.",
+    "physical_device": "Not checked on physical phone; CSS width emulation only. Virtual keyboard behavior must be verified on an actual device.",
+    "production": "No production assets or panel domain changed. The original mobile gradient/fade behaviors were observed only; no production changes made."
   },
   "disabled": [
     "Real AI/provider API",
@@ -41,6 +49,6 @@
   ],
   "note": "The local chat still gives rule-based demo recommendations only; it does not monitor live business state or activate actions.",
   "assistant_name": "Antonella IA. Sapien remains the panel/product brand.",
-  "assistant_capability": "Antonella is still an explicitly local rule-based design demo; not connected to account data, monitoring, a model provider, tools/actions, saved history or API credentials.",
+  "assistant_capability": "Antonella IA is still a local rule-based demo. No Gmail/business context, real model, API, monitoring, persistent chat, tool action, or activation flow is connected.",
   "production_review": "Observed deployed mobile nav assets: panel-nav-glass.js sets a translucent gradient; panel-top-glass-veil.js uses a vertical mask fade. Neither production asset or deployment was modified."
 }

@@ -1,16 +1,19 @@
-# Sapien · revisión aislada V44
+# Sapien · revisión aislada V47
 
-Staging de prueba. **Producción no se modificó.**
+**Staging únicamente. El panel productivo no se modificó.**
 
-- Lema: “Creamos todo y lo dejamos en automático.” Sin promesa de ventas. Estilo un poco mayor, sin caja decorativa.
-- Los nueve textos de tarjeta se hicieron más breves y conversacionales (reducción aproximada de 35–60% por texto), conservando estados/qualificadores necesarios en sus marcas de preparación.
-- Se amplió el espacio entre categoría, slider y tarjetas; bordes y sombras se hicieron menos ruidosos.
-- En Su web + IA, precio, COP y “Pago único” destacan y el CTA rojo ocupa la columna derecha. El modal conserva “Pague contra entrega, al verla online” y el precio único. Su acción sigue siendo una demostración que no envía solicitud.
-- Antonella mantiene etiqueta clara “Demo · sin conexión”; su indicador/animación se afinó en coral Sapien. Estados de espera son animación de demostración, no razonamiento o actividad de un modelo real. Conversación local mantiene los turnos sin desplazar la página.
-- En producción se revisaron las referencias al velo móvil: la navegación inferior tiene fondo translúcido y la cabecera usa máscara vertical de desvanecimiento. Esos recursos de producción no se alteraron.
+- Lema: “Creamos todo y lo dejamos en automático.” Sin promesa de resultados de ventas.
+- Nueve textos de servicio más cortos y directos; estados y aclaraciones necesarias se mantienen en la tarjeta.
+- Más aire uniforme entre título de cada familia, slider y tarjetas en PC y móvil emulado.
+- Su web + IA muestra $50.000 con “COP · Pago único” en una línea secundaria legible y un botón rojo de acción a la derecha. “Pague contra entrega, al verla online” queda exclusivamente en el modal.
+- Los iconos y los símbolos de capacidades de la tarjeta web usan círculos discretos y acento coral/rojo con una gama contenida. La tarjeta destacada tiene borde y sombras reducidas.
+- Modal más sobrio: beneficios/condiciones en coral Sapien, scrollbar del carrusel oculto sin desactivar el deslizamiento. El texto de pago acordado sigue visible. La acción de solicitud solo cierra la demostración: no envía ni guarda.
+- Se observó en producción el comportamiento actual del velo móvil (fondo de navegación traslúcido y cabecera con desvanecimiento progresivo). Se documenta, no se cambia.
 
-QA en navegador aún pendiente para esta V44; 320/360/390 emulación y prueba desktop deben repetirse tras el deploy. Teclado nativo requiere dispositivo físico. Antonella no accede al Gmail o al contexto de producción: registro, consulta de correo, datos, monitorización, API, herramientas, memoria y acciones reales no están conectados en esta prueba.
+## Validación
 
-V45 polishes V44: one quiet accent per icon family, softer outline, red CTA and a legible support line “COP · Pago único”, plus a cleaner modal and slightly wider category spacing.
+Se inspeccionaron escritorio y emulación responsive a 320, 360 y 390 CSS px. Se probó el modal y la interacción local de Antonella; no mueve la página al enviar. El texto de precio, la ubicación del pago y la estructura se cotejaron. Las referencias estáticas de la página revisadas responden HTTP 200.
 
-V46 loads V43–V45 stylesheets in sequence before final CTA/icon override.
+**Límites:** la consola del navegador mostró un error genérico 404 sin URL identificable; las rutas estáticas conocidas sí respondieron 200, pero no afirmamos consola sin errores. No se probó con teléfono/teclado real ni instalación PWA.
+
+Antonella IA sigue siendo una demo local de respuestas por reglas: no consulta Gmail, el negocio, monitorización real ni un modelo conectado; no guarda conversaciones ni realiza acciones. Integraciones/API reales necesitan autorización, backend seguro y QA independiente.
