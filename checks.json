@@ -32,7 +32,7 @@
   ],
   "qa": {
     "browser_desktop": "V14 screenshot confirms menu row is no longer oval; V15 background visibility final browser check pending.",
-    "browser_responsive": "V16 screenshot at 320/360/390 shows cards retained but next category title partly behind dock; V17 first-fold title confirmation pending.",
+    "browser_responsive": "V17 QA screenshot: 390px title visible; 320/360 still overlapped bottom dock. V18 fixes source spacing; final screenshot verification pending.",
     "carousel_touch_swipe": "not tested",
     "pwa_install_on_device": "not tested",
     "mobile_physical": "not tested",
@@ -68,6 +68,6 @@
   "layout": {
     "card_width_height_padding": "unchanged relative to production stylesheet",
     "first_view": "first category and next category heading now fit better; tightened only vertical margins before first shelf",
-    "mobile_first_fold": "V17 overrides legacy 26px margin after the first service-category heading down to 4px and trims only tagline padding/margins; cards, card font size, buttons and desktop positions unchanged."
+    "mobile_first_fold": "V18 overrides the first category heading bottom margin/padding to 2px each on mobile to lift all first-row content and the following category title; card width/height/padding/type remain source CSS."
   }
 }
