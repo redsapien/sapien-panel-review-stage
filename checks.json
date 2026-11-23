@@ -31,12 +31,14 @@
     "profile save remains disabled; brand-name typing only previews the greeting for this browser tab"
   ],
   "qa": {
-    "browser_desktop": "V11 browser check: brand preview changed to Café Prueba, card copy unchanged, account menu opened; V12 circular control treatment verification pending.",
-    "browser_responsive": "V8h tested in 320/360/390 CSS pixel iframes; V11 final check pending.",
+    "browser_desktop": "V12: loaded at 1366px, inspected brand, service icon frames, account menu, profile-name preview and service detail modal; modal opened and closed; no browser console errors.",
+    "browser_responsive": "V12 rendered in 320, 360 and 390 CSS-pixel browser iframes; header brand stays in top nav, menus and business mark remain at their top positions, and original card copy/prices appear unchanged.",
     "carousel_touch_swipe": "not tested",
     "pwa_install_on_device": "not tested",
     "mobile_physical": "not tested",
-    "real_auth_upload_request_or_backend": "disabled for public isolated review"
+    "real_auth_upload_request_or_backend": "disabled for public isolated review",
+    "resources": "37 HTML/CSS/font/icon/manifest/script resources returned HTTP 200.",
+    "browser_light_theme": "menu theme toggle confirmed in previous isolated V8 screenshot, not rechecked for V12"
   },
   "pwa_assets": {
     "mobile": "opaque red-S halo PNGs plus maskable variant",
@@ -46,7 +48,7 @@
   },
   "greeting": {
     "nine_rotating_five-word_prompts": "read the brand name from existing name fields; generic fallback until entered",
-    "persistence": "same browser tab only; no server or account write",
+    "persistence": "sessionStorage in this browser tab only; no network or backend write; entered name is not prefilled for a different user/browser session.",
     "other_copy": "existing slogan and all service cards remain unchanged",
     "phrases": [
       "¿Qué hacemos hoy por {marca}?",
