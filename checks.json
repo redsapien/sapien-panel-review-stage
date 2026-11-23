@@ -1,5 +1,5 @@
 {
-  "version": "V41",
+  "version": "V42",
   "scope": "Isolated GitHub Pages preview only; production unchanged.",
   "changes": [
     "Card shows $50.000 COP and “Pago único” at left; “Ver qué incluye” button is larger at right. “Pago contra entrega” is only in modal.",
@@ -11,10 +11,16 @@
     "V38 corrects cascade priority so price/Pago único and the larger “Ver qué incluye” action remain left/right in one row at 320px; keeps single arrow; removes redundant assistant heading to expand workspace.",
     "V39 isolates web-offer footer with a new dedicated class so legacy selectors cannot stack the detail button. Price/Pago único and one text-only larger CTA stay on the same row, including 320px.",
     "V40 replaces the card footer layout with a two-track grid to keep the $50.000/Pago único unit separate from the detail button without overlap at 320px or desktop.",
-    "V41 gives the web-offer CTA a private class to bypass legacy CSS and arrow pseudo-elements; the action and price are arranged in explicit two-column grid."
+    "V41 gives the web-offer CTA a private class to bypass legacy CSS and arrow pseudo-elements; the action and price are arranged in explicit two-column grid.",
+    "Restyled nine service icons with a shared clean line weight, subtle translucent rings and one restrained accent palette per service family.",
+    "Updated main module icon active-state cues and category typography to echo Sapien S in a subdued way.",
+    "Named the assistant Antonella IA, removed repeated Sapien branding from assistant UI and tuned greeting/prompts to business review.",
+    "Maintains in-panel conversation scroll, focusing the composer without moving the outer page.",
+    "Info & more received coherent restrained section/card polish.",
+    "Connector/agent view names the future assistant Antonella IA and keeps its not-yet-active status explicit."
   ],
   "qa": {
-    "source": "DOM assertions passed; V40 browser visual exposed legacy pseudo-arrow and button stacking. V41 uses isolated CTA class; live visual verification pending."
+    "source": "V42 static DOM, SVG and asset checks passed; visual browser checks pending."
   },
   "disabled": [
     "Real AI/provider API",
@@ -24,5 +30,7 @@
     "Sending requests or payments",
     "Push and notification backend"
   ],
-  "note": "The local chat still gives rule-based demo recommendations only; it does not monitor live business state or activate actions."
+  "note": "The local chat still gives rule-based demo recommendations only; it does not monitor live business state or activate actions.",
+  "assistant_name": "Antonella IA. Sapien remains the panel/product brand.",
+  "assistant_capability": "Local heuristic demo only; no business account data, live monitoring, external model, actions, API credentials or persistence."
 }
