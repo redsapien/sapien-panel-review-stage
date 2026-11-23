@@ -1,4 +1,7 @@
 (()=>{
+ // Select isolated device-specific manifest; production manifests are never loaded.
+ const mobileDevice=Boolean(navigator.userAgentData?.mobile || /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (/Macintosh/i.test(navigator.userAgent) && navigator.maxTouchPoints>1));
+ const stageManifest=document.querySelector('link[rel="manifest"]');if(stageManifest)stageManifest.href=mobileDevice?'./manifest-mobile.webmanifest':'./manifest-desktop.webmanifest';
  const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
  const announce=t=>{let n=document.querySelector('.stage-demo-note');if(!n){n=document.createElement('div');n.className='stage-demo-note';n.setAttribute('role','status');n.setAttribute('aria-live','polite');document.body.append(n)}n.textContent=t;n.hidden=false;clearTimeout(window.__stageNoteTimer);window.__stageNoteTimer=setTimeout(()=>n.hidden=true,3000)};
  function setView(name){const views=[...document.querySelectorAll('.view')];if(!views.some(v=>v.id==='view-'+name))return;views.forEach(v=>v.classList.toggle('active',v.id==='view-'+name));document.querySelectorAll('[data-view]').forEach(a=>{const on=a.dataset.view===name;a.classList.toggle('active',on);if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});window.scrollTo({top:0,behavior:reduced()?'auto':'smooth'});document.documentElement.classList.remove('mobile-rail-open');document.body.classList.remove('mobile-rail-open');}

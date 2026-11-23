@@ -36,6 +36,7 @@
   "pwa_assets": {
     "mobile": "opaque red-S halo PNGs plus maskable variant",
     "desktop": "transparent red-S halo PNGs",
-    "separate_stage_scope": true
+    "separate_stage_scope": true,
+    "manifests": "separate isolated mobile and desktop manifests selected locally; device install tests pending"
   }
 }
